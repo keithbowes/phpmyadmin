@@ -1,7 +1,7 @@
 phpMyAdmin - Readme
 ===================
 
-Version 3.5.8.2
+This is the nojs branch, not requiring JavaScript, based off version 3.5.8.2
 
 A set of PHP-scripts to manage MySQL over the web.
 
