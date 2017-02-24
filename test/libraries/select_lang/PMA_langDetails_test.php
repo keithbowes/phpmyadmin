@@ -35,6 +35,7 @@ class PMA_langDetails_test extends PHPUnit_Framework_TestCase
             array('el|greek', 'el', '&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940;', 'el'),
             array('en|english', 'en', '', 'en'),
             array('en[_-]gb|english (United Kingdom)', 'en-gb', '', 'en_GB'),
+	    array('eo|esperanto', 'eo', 'Esperanto');
             array('es|spanish', 'es', 'Espa&ntilde;ol', 'es'),
             array('et|estonian', 'et', 'Eesti', 'et'),
             array('eu|basque', 'eu', 'Euskara', 'eu',),

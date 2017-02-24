@@ -209,6 +209,10 @@ function PMA_langDetails($lang)
         return array('bs|bosnian', 'bs', 'Bosanski');
     case 'br':
         return array('br|breton', 'br', 'Brezhoneg');
+    case 'brx':
+        return array('brx|bodo', 'brx', 'बर\'');
+    case 'ckb':
+        return array('ckb|kurdish', 'ckb', 'Kurdî');
     case 'ca':
         return array('ca|catalan', 'ca', 'Catal&agrave;');
     case 'cs':
@@ -225,6 +229,8 @@ function PMA_langDetails($lang)
         return array('en|english', 'en', '');
     case 'en_GB':
         return array('en[_-]gb|english (United Kingdom)', 'en-gb', '');
+    case 'eo':
+        return array('eo|Esperanto', 'eo', 'Esperanto');
     case 'es':
         return array('es|spanish', 'es', 'Espa&ntilde;ol');
     case 'et':
@@ -237,6 +243,8 @@ function PMA_langDetails($lang)
         return array('fi|finnish', 'fi', 'Suomi');
     case 'fr':
         return array('fr|french', 'fr', 'Fran&ccedil;ais');
+    case 'fy':
+        return array('fy|frisian', 'fy', 'Frysk');
     case 'gl':
         return array('gl|galician', 'gl', 'Galego');
     case 'he':
@@ -247,16 +255,34 @@ function PMA_langDetails($lang)
         return array('hr|croatian', 'hr', 'Hrvatski');
     case 'hu':
         return array('hu|hungarian', 'hu', 'Magyar');
+    case 'ia':
+        return array('ia|interlingua', 'ia', 'Interlingua');
     case 'id':
         return array('id|indonesian', 'id', 'Bahasa Indonesia');
+    case 'ig':
+        return array('id|igbo', 'ig', 'Asụsụ Igbo'); 
     case 'it':
         return array('it|italian', 'it', 'Italiano');
     case 'ja':
         return array('ja|japanese', 'ja', '&#26085;&#26412;&#35486;');
-    case 'ko':
-        return array('ko|korean', 'ko', '&#54620;&#44397;&#50612;');
     case 'ka':
         return array('ka|georgian', 'ka', '&#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312;');
+    case 'kab':
+        return array('kab|kabyle', 'kab', 'Taqbaylit');
+    case 'kk':
+        return array('kk|kazakh', 'kk', 'қазақ тілі');
+    case 'km':
+        return array('km|central khmer', 'km', 'ខេមរភាសា');
+    case 'kn':
+        return array('kn|kannada', 'kn', 'ಕನ್ನಡ');
+    case 'ksh':
+        return array('ksh|colognian', 'ksh', 'Kölsch Platt');
+    case 'ko':
+        return array('ko|korean', 'ko', '&#54620;&#44397;&#50612;');
+    case 'ky':
+        return array('ky|kyrgyz', 'ky', 'кыргызча');
+    case 'li':
+        return array('li|limburgish', 'li', 'Lèmburgs');
     case 'lt':
         return array('lt|lithuanian', 'lt', 'Lietuvi&#371;');
     case 'lv':
@@ -267,10 +293,14 @@ function PMA_langDetails($lang)
         return array('mn|mongolian', 'mn', '&#1052;&#1086;&#1085;&#1075;&#1086;&#1083;');
     case 'ms':
         return array('ms|malay', 'ms', 'Bahasa Melayu');
+    case 'ne':
+        return array('ne|nepali', 'ne', 'नेपाली भाषा');
     case 'nl':
         return array('nl|dutch', 'nl', 'Nederlands');
     case 'nb':
         return array('nb|norwegian', 'nb', 'Norsk');
+    case 'pa':
+        return array('pa|punjabi', 'pa', 'پنجابی');
     case 'pl':
         return array('pl|polish', 'pl', 'Polski');
     case 'pt_BR':
@@ -317,6 +347,10 @@ function PMA_langDetails($lang)
         return array('uz[-_]lat|uzbek-latin', 'uz-lat', 'O&lsquo;zbekcha');
     case 'uz':
         return array('uz[-_]cyr|uzbek-cyrillic', 'uz-cyr', '&#1038;&#1079;&#1073;&#1077;&#1082;&#1095;&#1072;');
+    case 'vi':
+        return array('vi|vietnamese', 'vi', 'Tiếng Việt');
+    case 'vls':
+        return array('vls|west flemish', 'vls', 'West-Vlaams');
     case 'zh_TW':
         return array('zh[-_](tw|hk)|chinese traditional', 'zh-TW', '&#20013;&#25991;');
     case 'zh_CN':

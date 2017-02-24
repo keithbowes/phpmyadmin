@@ -22,8 +22,6 @@ phpmyadmin.wpj
 .idea
 .netbeans
 *.sw[op]
-# Locales
-/locale/
 # Backups
 *~
 # Javascript sources
