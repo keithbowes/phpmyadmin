@@ -159,9 +159,7 @@ if ($GLOBALS['text_dir'] === 'ltr') {
         name="frame_navigation" />
     <?php } ?>
     <noframes>
-        <body>
-            <p><?php echo __('phpMyAdmin is more friendly with a <b>frames-capable</b> browser.'); ?></p>
-        </body>
+        <p><?php include 'navigation.php'; ?></p>
     </noframes>
 </frameset>
 </html>
