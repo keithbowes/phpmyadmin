@@ -238,7 +238,10 @@ display_fieldset_bottom_simple();
 display_form_bottom();
 ?>
 <div id="footer">
-    <a href="http://phpmyadmin.net"><?php echo __('phpMyAdmin homepage') ?></a>
-    <a href="http://sourceforge.net/donate/index.php?group_id=23067"><?php echo __('Donate') ?></a>
-    <a href="?version_check=1<?php echo "{$separator}token=" . $_SESSION[' PMA_token '] ?>"><?php echo __('Check for latest version') ?></a>
+    <a href="../url.php?url=https://www.phpmyadmin.net/"><?php echo __('phpMyAdmin homepage') ?></a>
+    <a href="../url.php?url=https://www.phpmyadmin.net/donate/"><?php
+    echo __('Donate') ?></a>
+    <a href="?version_check=1<?php
+    echo "{$separator}token="
+    . $_SESSION[' PMA_token '] ?>"><?php echo __('Check for latest version') ?></a>
 </div>

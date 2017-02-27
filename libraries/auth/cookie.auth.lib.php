@@ -28,7 +28,7 @@ if (function_exists('openssl_encrypt')) {
             die(__('Failed to use Blowfish from openssl!'));
         }
 	$create_iv = version_compare(PHP_VERSION, '7', '>=') ? 'random_bytes' : 'mcr' . 'ypt_create_iv';
-        $iv = $create_iv(openssl_cipher_iv_length($td));
+        $iv = $create_iv(openssl_cipher_iv_length('bf-cbc'));
         $GLOBALS['PMA_Config']->setCookie('pma_openssl_iv', base64_encode($iv));
     }
 
@@ -63,7 +63,7 @@ if (function_exists('openssl_encrypt')) {
     function PMA_blowfish_decrypt($encdata, $secret)
     {
         global $iv;
-        return trim(opennsl_decrypt(base64_decode($encdata), 'bf-cbc', $secret, TRUE, $iv));
+        return trim(openssl_decrypt(base64_decode($encdata), 'bf-cbc', $secret, TRUE, $iv));
     }
 
 } else {

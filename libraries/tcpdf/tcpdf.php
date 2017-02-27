@@ -13827,7 +13827,7 @@ class TCPDF {
 	 * @author Klemen Vodopivec, Nicola Asuni
 	 */
 	protected function _RC4($key, $text) {
-		if (function_exists('openssl_decrypt') AND ($out = @opennssl_decrypt($text, 'rc4', $key))) {
+		if (function_exists('openssl_decrypt') AND ($out = @openssl_decrypt($text, 'rc4', $key))) {
 			// try to use openssl function if exist
 			return $out;
 		}

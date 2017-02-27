@@ -11,7 +11,7 @@
  */
 
 if (!function_exists('__')) {
-    die('Bad invocation!');
+    exit();
 }
 
 $strConfigAjaxEnable_desc = __('Improves efficiency of screen refresh');

@@ -697,7 +697,7 @@ function PMA_array_remove($path, &$array)
  */
 function PMA_linkURL($url)
 {
-    if (!preg_match('#^https?://#', $url) || defined('PMA_SETUP')) {
+    if (!preg_match('#^https?://#', $url)) {
         return $url;
     } else {
         if (!function_exists('PMA_generate_common_url')) {
@@ -705,7 +705,11 @@ function PMA_linkURL($url)
         }
         $params = array();
         $params['url'] = $url;
-        return './url.php' . PMA_generate_common_url($params);
+        if (defined('PMA_SETUP')) {
+            return '../url.php' . PMA_generate_common_url($params);
+        } else {
+            return './url.php' . PMA_generate_common_url($params);
+        }
     }
 }
 
@@ -747,7 +751,71 @@ function PMA_AddJSCode($str)
  */
 function PMA_AddJSVar($key, $value, $escape = true)
 {
-    PMA_AddJsCode(PMA_getJsValue($key, $value, $escape));
+    $arr = parse_url($url);
+    $domain = $arr["host"];
+    $domainWhiteList = array(
+        /* Include current domain */
+        $_SERVER['SERVER_NAME'],
+        /* phpMyAdmin domains */
+        'wiki.phpmyadmin.net', 'www.phpmyadmin.net', 'phpmyadmin.net',
+        'docs.phpmyadmin.net',
+        'demo.phpmyadmin.net',
+        /* mysql.com domains */
+        'dev.mysql.com','bugs.mysql.com',
+        /* mariadb domains */
+        'mariadb.org', 'mariadb.com',
+        /* php.net domains */
+        'php.net',
+        /* sourceforge.net domain */
+        'sourceforge.net',
+        /* Github domains*/
+        'github.com','www.github.com',
+        /* Percona domains */
+        'www.percona.com',
+        /* Following are doubtful ones. */
+        'www.primebase.com','pbxt.blogspot.com',
+        'mysqldatabaseadministration.blogspot.com',
+        /* CVE */
+        'cve.mitre.org',
+    );
+    if (in_array(strtolower($domain), $domainWhiteList)) {
+        return true;
+    }
+
+    return false;
 }
 
+/**
+ * Checks whether domain of URL is whitelisted domain or not.
+ * Use only for URLs of external sites.
+ *
+ * @param string $url URL of external site.
+ *
+ * @return boolean.True:if domain of $url is allowed domain, False:otherwise.
+ */
+function PMA_isAllowedDomain($url)
+{
+    $arr = parse_url($url);
+    $domain = $arr["host"];
+    $domainWhiteList = array(
+        /* Include current domain */
+        $_SERVER['SERVER_NAME'],
+        /* phpMyAdmin domains */
+        'wiki.phpmyadmin.net', 'www.phpmyadmin.net', 'phpmyadmin.net',
+        'docs.phpmyadmin.net',
+        /* mysql.com domains */
+        'dev.mysql.com','bugs.mysql.com',
+        /* php.net domains */
+        'php.net',
+        /* Github domains*/
+        'github.com','www.github.com',
+        /* Following are doubtful ones. */
+        'www.primebase.com','pbxt.blogspot.com'
+    );
+    if (in_array(strtolower($domain), $domainWhiteList)) {
+        return true;
+    }
+
+    return false;
+}
 ?>
