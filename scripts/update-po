@@ -2,6 +2,9 @@
 # vim: expandtab sw=4 ts=4 sts=4:
 export LC_ALL=C
 
+cd $(dirname $0)
+cd ..
+
 # Generate PHP code for advisor rules
 php ./scripts/advisor2php > po/advisory_rules.php
 
