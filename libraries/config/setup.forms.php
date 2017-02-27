@@ -117,7 +117,7 @@ $forms['Features']['Page_titles'] = array(
 $forms['Features']['Warnings'] = array(
     'PmaNoRelation_DisableWarning',
     'SuhosinDisableWarning',
-    'McryptDisableWarning');
+    'OpenSSLDisableWarning');
 $forms['Features']['Developer'] = array(
     'UserprefsDeveloperTab',
     'Error_Handler/display',

@@ -54,12 +54,12 @@ $cfg['PmaNoRelation_DisableWarning'] = false;
 $cfg['SuhosinDisableWarning'] = false;
 
 /**
- * Disable the default warning that is displayed if mcrypt is missing for
+ * Disable the default warning that is displayed if openssl is missing for
  * cookie authentication.
  *
- * @global boolean $cfg['McryptDisableWarning']
+ * @global boolean $cfg['OpenSSLDisableWarning']
  */
-$cfg['McryptDisableWarning'] = false;
+$cfg['OpenSSLtDisableWarning'] = false;
 
 /**
  * Show warning about incomplete translations on certain threshold.

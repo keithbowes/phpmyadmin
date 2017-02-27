@@ -13827,8 +13827,8 @@ class TCPDF {
 	 * @author Klemen Vodopivec, Nicola Asuni
 	 */
 	protected function _RC4($key, $text) {
-		if (function_exists('mcrypt_decrypt') AND ($out = @mcrypt_decrypt(MCRYPT_ARCFOUR, $key, $text, MCRYPT_MODE_STREAM, ''))) {
-			// try to use mcrypt function if exist
+		if (function_exists('openssl_decrypt') AND ($out = @opennssl_decrypt($text, 'rc4', $key))) {
+			// try to use openssl function if exist
 			return $out;
 		}
 		if ($this->last_enc_key != $key) {
@@ -13863,8 +13863,8 @@ class TCPDF {
 	}
 
 	/**
-	 * Returns the input text exrypted using AES algorithm and the specified key.
-	 * This method requires mcrypt.
+	 * Returns the input text encrypted using AES algorithm and the specified key.
+	 * This method requires OpenSSL.
 	 * @param $key (string) encryption key
 	 * @param $text (String) input text to be encrypted
 	 * @return String encrypted text
@@ -13876,8 +13876,9 @@ class TCPDF {
 		// padding (RFC 2898, PKCS #5: Password-Based Cryptography Specification Version 2.0)
 		$padding = 16 - (strlen($text) % 16);
 		$text .= str_repeat(chr($padding), $padding);
-		$iv = mcrypt_create_iv(mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC), MCRYPT_RAND);
-		$text = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key, $text, MCRYPT_MODE_CBC, $iv);
+		$create_iv = version_compare(PHP_VERSION, '7.0', '>=') ? 'random_bytes' : 'mc' . 'rypt_create_iv';
+		$iv = $create_iv(openssl_cipher_iv_length('aes-128-cbc'));
+		$text = openssl_encrypt($key, 'aes-128-cbc', $text, TRUE, $iv);
 		$text = $iv.$text;
 		return $text;
 	}
@@ -13936,8 +13937,8 @@ class TCPDF {
 	 */
 	protected function _UEvalue() {
 		$hashkey = hash('sha256', $this->encryptdata['user_password'].$this->encryptdata['UKS'], true);
-		$iv = str_repeat("\x00", mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC));
-		return mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $hashkey, $this->encryptdata['key'], MCRYPT_MODE_CBC, $iv);
+		$iv = str_repeat("\x00", openssl_cipher_iv_length('aes-128-cbc'));
+		return openssl_encrypt($this->encryptdata['key'], 'aes-128', $hashkey, $iv);
 	}
 
 	/**
@@ -13987,8 +13988,8 @@ class TCPDF {
 	 */
 	protected function _OEvalue() {
 		$hashkey = hash('sha256', $this->encryptdata['owner_password'].$this->encryptdata['OKS'].$this->encryptdata['U'], true);
-		$iv = str_repeat("\x00", mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC));
-		return mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $hashkey, $this->encryptdata['key'], MCRYPT_MODE_CBC, $iv);
+		$iv = str_repeat("\x00", openssl_cihper_iv_length('aes-128-cbc'));
+		return openssl_encrypt($this->encryptdata['key'], 'aes-128-cbc', $hashkey, TRUE, $iv);
 	}
 
 	/**
@@ -14043,8 +14044,8 @@ class TCPDF {
 				}
 				$perms .= 'adb'; // bytes 9-11
 				$perms .= 'nick'; // bytes 12-15
-				$iv = str_repeat("\x00", mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_ECB));
-				$this->encryptdata['perms'] = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $this->encryptdata['key'], $perms, MCRYPT_MODE_ECB, $iv);
+				$iv = str_repeat("\x00", openssl_cipher_iv_length('aes-128-cbc'));
+				$this->encryptdata['perms'] = openssl_encrypt($perms, 'aes-128-cbc', $this->encryptdata['key'], TRUE, $iv);
 			} else { // RC4-40, RC4-128, AES-128
 				// Pad passwords
 				$this->encryptdata['user_password'] = substr($this->encryptdata['user_password'].$this->enc_padding, 0, 32);
@@ -14202,11 +14203,11 @@ class TCPDF {
 			$this->encryptdata['StrF'] = 'StdCF';
 		}
 		if ($mode > 1) { // AES
-			if (!extension_loaded('mcrypt')) {
-				$this->Error('AES encryption requires mcrypt library (http://www.php.net/manual/en/mcrypt.requirements.php).');
+			if (!extension_loaded('openssl')) {
+				$this->Error('AES encryption requires OpenSSL library (http://www.php.net/manual/en/openssl.requirements.php).');
 			}
-			if (mcrypt_get_cipher_name(MCRYPT_RIJNDAEL_128) === false) {
-				$this->Error('AES encryption requires MCRYPT_RIJNDAEL_128 cypher.');
+			if (array_search('aes-128-cbc', openssl_get_cipher_methods()) === false) {
+				$this->Error('AES encryption requires aes-128-cbc cipher.');
 			}
 			if (($mode == 3) AND !function_exists('hash')) {
 				// the Hash extension requires no external libraries and is enabled by default as of PHP 5.1.2.

@@ -384,10 +384,10 @@ if ($cfg['SuhosinDisableWarning'] == false
 }
 
 /**
- * Warning about mcrypt.
+ * Warning about OpenSSL.
  */
-if (!function_exists('mcrypt_encrypt') && !$GLOBALS['cfg']['McryptDisableWarning']) {
-    PMA_warnMissingExtension('mcrypt');
+if (!function_exists('openssl_encrypt') && !$GLOBALS['cfg']['OpenSSLDisableWarning']) {
+    PMA_warnMissingExtension('openssl');
 }
 
 /**

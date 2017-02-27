@@ -53,7 +53,7 @@ $forms['Features']['Page_titles'] = array(
 $forms['Features']['Warnings'] = array(
     'PmaNoRelation_DisableWarning',
     'SuhosinDisableWarning',
-    'McryptDisableWarning');
+    'OpenSSLDisableWarning');
 // settings from this form are treated specially, see prefs_forms.php and user_preferences.lib.php
 $forms['Features']['Developer'] = array(
     'Error_Handler/display',

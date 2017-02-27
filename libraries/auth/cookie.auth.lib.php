@@ -15,31 +15,25 @@ if (! defined('PHPMYADMIN')) {
  */
 require './libraries/auth/swekey/swekey.auth.lib.php';
 
-if (function_exists('mcrypt_encrypt')) {
-    /**
-     * Uses faster mcrypt library if available
-     * (as this is not called from anywhere else, put the code in-line
-     *  for faster execution)
-     */
-
+if (function_exists('openssl_encrypt')) {
     /**
      * Initialization
      * Store the initialization vector because it will be needed for
      * further decryption. I don't think necessary to have one iv
      * per server so I don't put the server number in the cookie name.
      */
-    if (empty($_COOKIE['pma_mcrypt_iv']) || false === ($iv = base64_decode($_COOKIE['pma_mcrypt_iv'], true))) {
-        srand((double) microtime() * 1000000);
-        $td = mcrypt_module_open(MCRYPT_BLOWFISH, '', MCRYPT_MODE_CBC, '');
-        if ($td === false) {
-            die(__('Failed to use Blowfish from mcrypt!'));
+    if (empty($_COOKIE['pma_openssl_iv']) || false === ($iv = base64_decode($_COOKIE['pma_openssl_iv'], true))) {
+        $td = openssl_get_cipher_methods();
+        if (array_search('bf-cbc', $td) === FALSE) {
+            die(__('Failed to use Blowfish from openssl!'));
         }
-        $iv = mcrypt_create_iv(mcrypt_enc_get_iv_size($td), MCRYPT_RAND);
-        $GLOBALS['PMA_Config']->setCookie('pma_mcrypt_iv', base64_encode($iv));
+	$create_iv = version_compare(PHP_VERSION, '7', '>=') ? 'random_bytes' : 'mcr' . 'ypt_create_iv';
+        $iv = $create_iv(openssl_cipher_iv_length($td));
+        $GLOBALS['PMA_Config']->setCookie('pma_openssl_iv', base64_encode($iv));
     }
 
     /**
-     * Encryption using blowfish algorithm (mcrypt)
+     * Encryption using blowfish algorithm (openssl)
      *
      * @param   string  original data
      * @param   string  the secret
@@ -52,11 +46,11 @@ if (function_exists('mcrypt_encrypt')) {
     function PMA_blowfish_encrypt($data, $secret)
     {
         global $iv;
-        return base64_encode(mcrypt_encrypt(MCRYPT_BLOWFISH, $secret, $data, MCRYPT_MODE_CBC, $iv));
+        return base64_encode(openssl_encrypt($data,'bf-cbc', $secret, TRUE, $iv));
     }
 
     /**
-     * Decryption using blowfish algorithm (mcrypt)
+     * Decryption using blowfish algorithm (openssl)
      *
      * @param   string  encrypted data
      * @param   string  the secret
@@ -69,7 +63,7 @@ if (function_exists('mcrypt_encrypt')) {
     function PMA_blowfish_decrypt($encdata, $secret)
     {
         global $iv;
-        return trim(mcrypt_decrypt(MCRYPT_BLOWFISH, $secret, base64_decode($encdata), MCRYPT_MODE_CBC, $iv));
+        return trim(opennsl_decrypt(base64_decode($encdata), 'bf-cbc', $secret, TRUE, $iv));
     }
 
 } else {

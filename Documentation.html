@@ -73,9 +73,9 @@ vim: expandtab ts=4 sw=4 sts=4 tw=78
                 original aspect ratio</li>
             <li>When using the &quot;cookie&quot;
                 <a href="#authentication_modes">authentication method</a>, the
-                <a href="http://www.php.net/mcrypt"><tt>mcrypt</tt></a> extension
+                <a href="http://www.php.net/openssl"><tt>OpenSSL</tt></a> extension
                 is strongly suggested for most users and is <b>required</b> for
-                64&#8211;bit machines. Not using mcrypt will cause phpMyAdmin to
+                64&#8211;bit machines. Not using openSSL will cause phpMyAdmin to
                 load pages significantly slower.
                 </li>
                 <li>To support upload progress bars, see <a href="#faq2_9">
@@ -499,7 +499,7 @@ GRANT ALL PRIVILEGES ON user_base.* TO 'real_user'@localhost IDENTIFIED BY 'real
         <a href="#AllowArbitraryServer" class="configrule">
         $cfg['AllowArbitraryServer']</a> directive.</li>
     <li>As mentioned in the <a href="#require">requirements</a> section, having
-        the <tt>mcrypt</tt> extension will speed up access considerably, but is
+        the <tt>openssl</tt> extension will speed up access considerably, but is
         not required.</li>
 </ul>
 
@@ -623,8 +623,8 @@ since this link provides funding for phpMyAdmin.
     You can set this parameter to <tt>TRUE</tt> to stop this message 
     from appearing.</dd>
 
-    <dt id="cfg_McryptDisableWarning">$cfg['McryptDisableWarning'] boolean</dt>
-    <dd>Disable the default warning that is displayed if mcrypt is missing for
+    <dt id="cfg_OpenSSLDisableWarning">$cfg['OpenSSLDisableWarning'] boolean</dt>
+    <dd>Disable the default warning that is displayed OpenSSL is missing for
     cookie authentication.
     You can set this parameter to <tt>TRUE</tt> to stop this message 
     from appearing.</dd>
@@ -3105,7 +3105,7 @@ RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization},L]
 
 <p> If your cluster consist of different architectures, PHP code used for
     encryption/decryption won't work correct. This is caused by use of
-    pack/unpack functions in code. Only solution is to use mcrypt extension
+    pack/unpack functions in code. Only solution is to use openssl extension
     which works fine in this case.</p>
 
 <h4 id="faq1_38">
@@ -5145,10 +5145,10 @@ Jakub Wilk, Thomas Michael Winningham, Vilius Zigmantas, &quot;Manuzhai&quot;.
     <li><a id="glossar_mac_os_x" href="http://www.wikipedia.org/wiki/Mac_OS_X"><acronym title="Apple Macintosh">Mac</acronym> <abbr title="operating system">OS</abbr> X</a>
         - the operating system which is included with all currently shipping Apple
         Macintosh computers in the consumer and professional markets.</li>
-    <li><a href="http://www.wikipedia.org/wiki/MCrypt">MCrypt</a>
+    <li><a href="http://www.wikipedia.org/wiki/OpenSSL">OpenSSL</a>
          - a cryptographic library.</li>
-    <li><a href="http://php.net/mcrypt">mcrypt</a>
-         - the MCrypt PHP extension.</li>
+    <li><a href="http://php.net/openssl">openssl</a>
+         - the OpenSSL PHP extension.</li>
     <li><a href="http://www.wikipedia.org/wiki/MIME">MIME (Multipurpose Internet Mail Extensions)</a>
          - an Internet Standard for the format of e-mail.</li>
     <li><a href="http://www.wikipedia.org/wiki/module">module</a>
