@@ -27,13 +27,6 @@ $separator = PMA_get_arg_separator('html');
 messages_begin();
 
 //
-// Check phpMyAdmin version
-//
-if (isset($_GET['version_check'])) {
-    PMA_version_check();
-}
-
-//
 // Perform various security, compatibility and consistency checks
 //
 perform_config_checks();
@@ -241,7 +234,4 @@ display_form_bottom();
     <a href="../url.php?url=https://www.phpmyadmin.net/"><?php echo __('phpMyAdmin homepage') ?></a>
     <a href="../url.php?url=https://www.phpmyadmin.net/donate/"><?php
     echo __('Donate') ?></a>
-    <a href="?version_check=1<?php
-    echo "{$separator}token="
-    . $_SESSION[' PMA_token '] ?>"><?php echo __('Check for latest version') ?></a>
 </div>

@@ -13876,7 +13876,7 @@ class TCPDF {
 		// padding (RFC 2898, PKCS #5: Password-Based Cryptography Specification Version 2.0)
 		$padding = 16 - (strlen($text) % 16);
 		$text .= str_repeat(chr($padding), $padding);
-		$create_iv = version_compare(PHP_VERSION, '7.0', '>=') ? 'random_bytes' : 'mc' . 'rypt_create_iv';
+		$create_iv = function_exits('random_bytes') ? 'random_bytes' : 'openssl_random_pseudo_bytes';
 		$iv = $create_iv(openssl_cipher_iv_length('aes-128-cbc'));
 		$text = openssl_encrypt($key, 'aes-128-cbc', $text, TRUE, $iv);
 		$text = $iv.$text;

@@ -3035,12 +3035,6 @@ $(document).ready(function() {
     $('#body_browse_foreigners').find('#pageselector').live('change', function() {
         $(this).closest("form").submit();
     });
-
-    /**
-     * Load version information asynchronously.
-     */
-    if ($('.jsversioncheck').length > 0) {
-        $.getJSON('version_check.php', {}, PMA_current_version);
     }
 
     /**

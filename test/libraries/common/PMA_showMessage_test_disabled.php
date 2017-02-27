@@ -8,7 +8,7 @@
  * @group common.lib-tests
  */
 
-const PMA_IS_WINDOWS = false;
+define('PMA_IS_WINDOWS', FALSE);
 
 /*
  * Include to test.
