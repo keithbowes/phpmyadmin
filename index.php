@@ -159,7 +159,7 @@ if ($GLOBALS['text_dir'] === 'ltr') {
         name="frame_navigation" />
     <?php } ?>
     <noframes>
-        <p><?php include 'navigation.php'; ?></p>
+        <?php include 'navigation.php'; ?>
     </noframes>
 </frameset>
 </html>
