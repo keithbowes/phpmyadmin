@@ -3035,7 +3035,6 @@ $(document).ready(function() {
     $('#body_browse_foreigners').find('#pageselector').live('change', function() {
         $(this).closest("form").submit();
     });
-    }
 
     /**
      * Slider effect.

@@ -3,12 +3,10 @@
  * URL redirector to avoid leaking Referer with some sensitive information.
  */
 
-require_once './libraries/core.lib.php';
-require_once './libraries/php-gettext/gettext.inc';
-
 /**
  * Gets core libraries and defines some variables
-define('PMA_MINIMUM_COMMON', true);
+ */
+define('PMA_MINIMUM_COMMON', TRUE);
 require_once './libraries/common.inc.php';
 /**
  * JavaScript escaping.

@@ -14,15 +14,14 @@ Copyright (C) 1998-2000
     Tobias Ratschiller <tobias_at_ratschiller.com>
 
 Copyright (C) 2001-2013
-    Marc Delisle <marc_at_infomarc.info>
-    Olivier Müller <om_at_omnis.ch>
-    Robin Johnson <robbat2_at_users.sourceforge.net>
-    Alexander M. Turek <me_at_derrabus.de>
-    Michal Čihař <michal_at_cihar.com>
-    Garvin Hicking <me_at_supergarv.de>
-    Michael Keck <mkkeck_at_users.sourceforge.net>
+    Marc Delisle <marc_at_infomarc.info>,
+    Olivier Müller <om_at_omnis.ch>,
+    Robin Johnson <robbat2_at_users.sourceforge.net>,
+    Alexander M. Turek <me_at_derrabus.de>,
+    Michal Čihař <michal_at_cihar.com>,
+    Garvin Hicking <me_at_supergarv.de>,
+    Michael Keck <mkkeck_at_users.sourceforge.net>,
     Sebastian Mendel <cybot_tm_at_users.sourceforge.net>
-    [check Documentation.txt/.html file for more details]
 
 License
 -------
@@ -51,34 +50,3 @@ Summary
 
 phpMyAdmin is intended to handle the administration of MySQL over the web.
 For a summary of features, please see the Documentation.txt/.html file.
-
-Download
---------
-
-You can get the newest version at http://www.phpmyadmin.net/.
-
-More Information
-----------------
-
-Please see the Documentation.txt/.html file.
-
-Support
--------
-
-See reference about support forums under http://www.phpmyadmin.net/
-
-
-Enjoy!
-------
-
-The phpMyAdmin Devel team
-
-
-PS:
-
-Please, don't send us emails with question like "How do I compile PHP with
-MySQL-support". We just don't have the time to be your free help desk.
-
-Please send your questions to the appropriate mailing lists / forums.  Before
-contacting us, please read the Documentation.html (esp. the FAQ part).
-
