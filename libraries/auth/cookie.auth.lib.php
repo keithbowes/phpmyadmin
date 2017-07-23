@@ -27,7 +27,7 @@ if (function_exists('openssl_encrypt')) {
         if (array_search('bf-cbc', $td) === FALSE) {
             die(__('Failed to use Blowfish from openssl!'));
         }
-	$create_iv = function_exits('random_bytes') ? 'random_bytes' : 'openssl_random_pseudo_bytes';
+	$create_iv = function_exists('random_bytes') ? 'random_bytes' : 'openssl_random_pseudo_bytes';
         $iv = $create_iv(openssl_cipher_iv_length('bf-cbc'));
         $GLOBALS['PMA_Config']->setCookie('pma_openssl_iv', base64_encode($iv));
     }
