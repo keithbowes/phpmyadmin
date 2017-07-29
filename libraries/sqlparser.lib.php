@@ -1439,28 +1439,6 @@ if (! defined('PMA_MINIMUM_COMMON')) {
 
         } // end for $i (loop #1)
 
-        //DEBUG
-        /*
-          if (isset($current_select_expr)) {
-           for ($trace=0; $trace<=$current_select_expr; $trace++) {
-               echo "<br />";
-               reset ($subresult['select_expr'][$trace]);
-               while (list ($key, $val) = each ($subresult['select_expr'][$trace]))
-                   echo "sel expr $trace $key => $val<br />\n";
-               }
-          }
-
-          if (isset($current_table_ref)) {
-           echo "current_table_ref = " . $current_table_ref . "<br>";
-           for ($trace=0; $trace<=$current_table_ref; $trace++) {
-
-               echo "<br />";
-               reset ($subresult['table_ref'][$trace]);
-               while (list ($key, $val) = each ($subresult['table_ref'][$trace]))
-               echo "table ref $trace $key => $val<br />\n";
-               }
-          }
-        */
         // -------------------------------------------------------
 
 

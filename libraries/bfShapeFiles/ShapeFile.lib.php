@@ -235,8 +235,7 @@
 
       $offset = 50;
       if (is_array($this->records) && (count($this->records) > 0)) {
-        reset($this->records);
-        while (list($index, $record) = each($this->records)) {
+        foreach($this->records as $index => $record) {
           //Save the record to the .shp file
           $record->saveToFile($this->SHPFile, $this->DBFFile, $index + 1);
 
@@ -389,8 +388,7 @@
       $tmp = $this->DBFData;
       unset($this->DBFData);
       $this->DBFData = array();
-      reset($header);
-      while (list($key, $value) = each($header)) {
+      foreach($header as $key => $value) {
         $this->DBFData[$value[0]] = (isset($tmp[$value[0]])) ? $tmp[$value[0]] : "";
       }
     }
@@ -477,8 +475,7 @@
 
       $firstIndex = ftell($this->SHPFile);
       $readPoints = 0;
-      reset($this->SHPData["parts"]);
-      while (list($partIndex, $partData) = each($this->SHPData["parts"])) {
+      foreach($this->SHPData["parts"] as $partIndex => $partData) {
         if (!isset($this->SHPData["parts"][$partIndex]["points"]) || !is_array($this->SHPData["parts"][$partIndex]["points"])) {
           $this->SHPData["parts"][$partIndex] = array();
           $this->SHPData["parts"][$partIndex]["points"] = array();
@@ -501,10 +498,8 @@
         fwrite($this->SHPFile, pack("V", count($this->SHPData["parts"][$i])));
       }
 
-      reset($this->SHPData["parts"]);
       foreach ($this->SHPData["parts"] as $partData){
-        reset($partData["points"]);
-        while (list($pointIndex, $pointData) = each($partData["points"])) {
+        foreach($partData["points"] as $pointData) {
           $this->_savePoint($pointData);
         }
       }
