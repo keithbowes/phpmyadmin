@@ -200,7 +200,7 @@ function test_db_connection($extension, $connect_type, $host, $port, $socket, $u
         }
     }
     if (error_get_last()) {
-        $error .= ' - ' . error_get_last();
+        $error .= ' - ' . error_get_last()['message'];
     }
     return is_null($error) ? true : array($error_key => $error);
 }
@@ -299,7 +299,7 @@ function validate_regex($path, $values)
 
 
     if (error_get_last()) {
-        $error = preg_replace('/^preg_match\(\): /', '', error_get_last());
+        $error = preg_replace('/^preg_match\(\): /', '', error_get_last()['message']);
         return array($path => $error);
     }
 
