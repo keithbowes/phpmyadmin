@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: phpMyAdmin-docs 3.5.1-dev\n"
 "Report-Msgid-Bugs-To: phpmyadmin-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2017-02-27 10:42-0500\n"
+"POT-Creation-Date: 2017-08-21 13:29-0400\n"
 "PO-Revision-Date: 2013-04-02 17:10+0200\n"
 "Last-Translator: Michal Čihař <michal@cihar.com>\n"
 "Language-Team: French <http://l10n.cihar.com/projects/phpmyadmin/3-5/fr/>\n"
@@ -23,8 +23,7 @@ msgstr "Tout afficher"
 #: libraries/common.lib.php:2444
 #: libraries/schema/Pdf_Relation_Schema.class.php:1149
 #: libraries/schema/Pdf_Relation_Schema.class.php:1173
-#: libraries/schema/User_Schema.class.php:396
-#: libraries/select_lang.lib.php:523
+#: libraries/schema/User_Schema.class.php:396 libraries/select_lang.lib.php:523
 msgid "Page number:"
 msgstr "Page n° : "
 
@@ -68,18 +67,18 @@ msgstr "Rechercher"
 #: libraries/select_server.lib.php:93 libraries/sql_query_form.lib.php:356
 #: libraries/sql_query_form.lib.php:418 libraries/sql_query_form.lib.php:471
 #: libraries/tbl_properties.inc.php:575 main.php:115 navigation.php:170
-#: navigation.php:208 pmd_pdf.php:127 prefs_manage.php:263
-#: prefs_manage.php:314 server_binlog.php:109 server_privileges.php:746
-#: server_privileges.php:1790 server_privileges.php:2154
-#: server_privileges.php:2201 server_privileges.php:2244
-#: server_replication.php:233 server_replication.php:316
-#: server_replication.php:347 server_synchronize.php:1309 tbl_change.php:340
-#: tbl_change.php:1071 tbl_change.php:1108 tbl_chart.php:187
-#: tbl_indexes.php:288 tbl_operations.php:284 tbl_operations.php:321
-#: tbl_operations.php:525 tbl_operations.php:587 tbl_operations.php:790
-#: tbl_select.php:237 tbl_structure.php:688 tbl_structure.php:723
-#: tbl_tracking.php:438 tbl_tracking.php:576 tbl_zoom_select.php:320
-#: view_create.php:181 view_operations.php:99
+#: navigation.php:208 pmd_pdf.php:127 prefs_manage.php:263 prefs_manage.php:314
+#: server_binlog.php:109 server_privileges.php:746 server_privileges.php:1790
+#: server_privileges.php:2154 server_privileges.php:2201
+#: server_privileges.php:2244 server_replication.php:233
+#: server_replication.php:316 server_replication.php:347
+#: server_synchronize.php:1309 tbl_change.php:340 tbl_change.php:1071
+#: tbl_change.php:1108 tbl_chart.php:187 tbl_indexes.php:288
+#: tbl_operations.php:284 tbl_operations.php:321 tbl_operations.php:525
+#: tbl_operations.php:587 tbl_operations.php:790 tbl_select.php:237
+#: tbl_structure.php:688 tbl_structure.php:723 tbl_tracking.php:438
+#: tbl_tracking.php:576 tbl_zoom_select.php:320 view_create.php:181
+#: view_operations.php:99
 msgid "Go"
 msgstr "Exécuter"
 
@@ -88,9 +87,9 @@ msgstr "Exécuter"
 msgid "Keyname"
 msgstr "Nom de l'index"
 
-#: browse_foreigners.php:178 browse_foreigners.php:180
-#: server_collations.php:54 server_collations.php:66 server_engines.php:55
-#: server_plugins.php:147 server_status.php:1488
+#: browse_foreigners.php:178 browse_foreigners.php:180 server_collations.php:54
+#: server_collations.php:66 server_engines.php:55 server_plugins.php:147
+#: server_status.php:1488
 msgid "Description"
 msgstr "Description"
 
@@ -496,9 +495,8 @@ msgid "Submit Query"
 msgstr "Exécuter la requête"
 
 #: db_search.php:31 libraries/auth/config.auth.lib.php:77
-#: libraries/auth/config.auth.lib.php:98
-#: libraries/auth/cookie.auth.lib.php:570 libraries/auth/http.auth.lib.php:51
-#: libraries/auth/signon.auth.lib.php:237
+#: libraries/auth/config.auth.lib.php:98 libraries/auth/cookie.auth.lib.php:570
+#: libraries/auth/http.auth.lib.php:51 libraries/auth/signon.auth.lib.php:237
 msgid "Access denied"
 msgstr "Accès refusé"
 
@@ -548,7 +546,7 @@ msgstr "Supprimer de la table %s les occurences ?"
 #: libraries/schema/User_Schema.class.php:308
 #: libraries/schema/User_Schema.class.php:338
 #: libraries/sql_query_form.lib.php:411 pmd_general.php:417
-#: setup/frames/index.inc.php:140 setup/frames/index.inc.php:231
+#: setup/frames/index.inc.php:133 setup/frames/index.inc.php:224
 #: tbl_tracking.php:448 tbl_tracking.php:469 tbl_tracking.php:526
 msgid "Delete"
 msgstr "Effacer"
@@ -679,8 +677,8 @@ msgstr "Cocher tables avec pertes"
 msgid "Export"
 msgstr "Exporter"
 
-#: db_structure.php:593 db_structure.php:649
-#: libraries/display_tbl.lib.php:2610 tbl_structure.php:629
+#: db_structure.php:593 db_structure.php:649 libraries/display_tbl.lib.php:2610
+#: tbl_structure.php:629
 msgid "Print view"
 msgstr "Version imprimable"
 
@@ -691,8 +689,8 @@ msgstr "Vider"
 
 #: db_structure.php:599 db_tracking.php:105 enum_editor.php:86
 #: libraries/Index.class.php:490 libraries/common.lib.php:3298
-#: libraries/common.lib.php:3299 server_databases.php:269
-#: tbl_structure.php:150 tbl_structure.php:151 tbl_structure.php:589
+#: libraries/common.lib.php:3299 server_databases.php:269 tbl_structure.php:150
+#: tbl_structure.php:151 tbl_structure.php:589
 msgid "Drop"
 msgstr "Supprimer"
 
@@ -740,8 +738,7 @@ msgstr "Tables faisant l'objet d'un suivi"
 #: libraries/header_printview.inc.php:59 server_databases.php:161
 #: server_privileges.php:1836 server_privileges.php:1899
 #: server_privileges.php:2162 server_status.php:1250
-#: server_synchronize.php:1277 server_synchronize.php:1281
-#: tbl_tracking.php:655
+#: server_synchronize.php:1277 server_synchronize.php:1281 tbl_tracking.php:655
 msgid "Database"
 msgstr "Base de données"
 
@@ -1163,7 +1160,7 @@ msgstr "Fermer"
 #: libraries/common.lib.php:644 libraries/common.lib.php:1193
 #: libraries/common.lib.php:3302 libraries/common.lib.php:3303
 #: libraries/config/messages.inc.php:484 libraries/display_tbl.lib.php:1394
-#: libraries/schema/User_Schema.class.php:196 setup/frames/index.inc.php:139
+#: libraries/schema/User_Schema.class.php:196 setup/frames/index.inc.php:132
 msgid "Edit"
 msgstr "Modifier"
 
@@ -1387,8 +1384,7 @@ msgstr "Questions"
 msgid "Traffic"
 msgstr "Trafic"
 
-#: js/messages.php:137 libraries/server_links.inc.php:69
-#: server_status.php:1572
+#: js/messages.php:137 libraries/server_links.inc.php:69 server_status.php:1572
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -1874,7 +1870,7 @@ msgstr "%d n'est pas un numéro de ligne valable."
 #: js/messages.php:291 libraries/config/FormDisplay.tpl.php:355
 #: libraries/schema/User_Schema.class.php:352
 #: libraries/tbl_properties.inc.php:714 setup/frames/config.inc.php:39
-#: setup/frames/index.inc.php:229 tbl_change.php:1023
+#: setup/frames/index.inc.php:222 tbl_change.php:1023
 #: tbl_gis_visualization.php:193 tbl_indexes.php:280 tbl_relation.php:559
 msgid "Save"
 msgstr "Sauvegarder"
@@ -2039,7 +2035,7 @@ msgstr "Modifier le mot de passe"
 msgid "More"
 msgstr "plus"
 
-#: js/messages.php:367 setup/lib/index.lib.php:173
+#: js/messages.php:367
 #, php-format
 msgid ""
 "A newer version of phpMyAdmin is available and you should consider "
@@ -2621,8 +2617,8 @@ msgstr "Thème"
 msgid "Cannot connect: invalid settings."
 msgstr "Connexion impossible: paramètres incorrects."
 
-#: libraries/auth/config.auth.lib.php:87
-#: libraries/auth/cookie.auth.lib.php:166 libraries/auth/http.auth.lib.php:64
+#: libraries/auth/config.auth.lib.php:87 libraries/auth/cookie.auth.lib.php:166
+#: libraries/auth/http.auth.lib.php:64
 #, php-format
 msgid "Welcome to %s"
 msgstr "Bienvenue dans %s"
@@ -2780,9 +2776,8 @@ msgstr "Échec d'ouverture du fichier %s"
 msgid "shared"
 msgstr "partagé"
 
-#: libraries/build_html_for_db.lib.php:26
-#: libraries/config/messages.inc.php:185 libraries/export/xml.php:51
-#: server_status.php:604
+#: libraries/build_html_for_db.lib.php:26 libraries/config/messages.inc.php:185
+#: libraries/export/xml.php:51 server_status.php:604
 msgid "Tables"
 msgstr "Tables"
 
@@ -3168,28 +3163,28 @@ msgid "neither of the above"
 msgstr "aucun des choix ci-haut"
 
 #: libraries/config/FormDisplay.class.php:83
-#: libraries/config/validate.lib.php:438
+#: libraries/config/validate.lib.php:401
 msgid "Not a positive number"
 msgstr "Nombre non positif"
 
 #: libraries/config/FormDisplay.class.php:84
-#: libraries/config/validate.lib.php:450
+#: libraries/config/validate.lib.php:413
 msgid "Not a non-negative number"
 msgstr "Nombre non négatif"
 
 #: libraries/config/FormDisplay.class.php:85
-#: libraries/config/validate.lib.php:426
+#: libraries/config/validate.lib.php:389
 msgid "Not a valid port number"
 msgstr "Numéro de port invalide"
 
 #: libraries/config/FormDisplay.class.php:86
 #: libraries/config/FormDisplay.class.php:547
-#: libraries/config/validate.lib.php:378 libraries/config/validate.lib.php:465
+#: libraries/config/validate.lib.php:341 libraries/config/validate.lib.php:428
 msgid "Incorrect value"
 msgstr "Valeur incorrecte"
 
 #: libraries/config/FormDisplay.class.php:87
-#: libraries/config/validate.lib.php:479
+#: libraries/config/validate.lib.php:442
 #, php-format
 msgid "Value must be equal or lower than %s"
 msgstr "La valeur doit être égale ou plus petite que %s"
@@ -3411,7 +3406,7 @@ msgid "Compress on the fly"
 msgstr "Compression à la volée"
 
 #: libraries/config/messages.inc.php:45 setup/frames/config.inc.php:25
-#: setup/frames/index.inc.php:167
+#: setup/frames/index.inc.php:160
 msgid "Configuration file"
 msgstr "Fichier de configuration"
 
@@ -3843,7 +3838,7 @@ msgid "Customize appearance of the navigation frame"
 msgstr "Personnaliser l'apparence du panneau de navigation"
 
 #: libraries/config/messages.inc.php:183 libraries/select_server.lib.php:35
-#: setup/frames/index.inc.php:112
+#: setup/frames/index.inc.php:105
 msgid "Servers"
 msgstr "Serveurs"
 
@@ -3889,8 +3884,7 @@ msgstr ""
 "[a@Documentation.html#cfg_TitleTable]documentation[/a] pour les chaînes "
 "magiques pouvant être utilisées."
 
-#: libraries/config/messages.inc.php:196
-#: libraries/navigation_header.inc.php:86
+#: libraries/config/messages.inc.php:196 libraries/navigation_header.inc.php:86
 #: libraries/navigation_header.inc.php:89
 #: libraries/navigation_header.inc.php:92
 msgid "Query window"
@@ -4641,7 +4635,7 @@ msgstr "Fichier de configuration SweKey"
 msgid "Authentication method to use"
 msgstr "Type d'authentification"
 
-#: libraries/config/messages.inc.php:373 setup/frames/index.inc.php:128
+#: libraries/config/messages.inc.php:373 setup/frames/index.inc.php:121
 msgid "Authentication type"
 msgstr "Type d'authentification"
 
@@ -5394,7 +5388,7 @@ msgstr ""
 msgid "Verbose multiple statements"
 msgstr "Détails pour les requêtes multi-énoncés"
 
-#: libraries/config/messages.inc.php:521 setup/frames/index.inc.php:243
+#: libraries/config/messages.inc.php:521
 msgid "Check for latest version"
 msgstr "Vérifier la présence d'une nouvelle version"
 
@@ -5402,11 +5396,7 @@ msgstr "Vérifier la présence d'une nouvelle version"
 msgid "Enables check for latest version on main phpMyAdmin page"
 msgstr "Active la vérification de version sur la page principale"
 
-#: libraries/config/messages.inc.php:523 setup/lib/index.lib.php:121
-#: setup/lib/index.lib.php:131 setup/lib/index.lib.php:151
-#: setup/lib/index.lib.php:161 setup/lib/index.lib.php:172
-#: setup/lib/index.lib.php:179 setup/lib/index.lib.php:185
-#: setup/lib/index.lib.php:224
+#: libraries/config/messages.inc.php:523 setup/lib/index.lib.php:125
 msgid "Version check"
 msgstr "Vérification de version"
 
@@ -5482,40 +5472,40 @@ msgstr "Microsoft Word 2000"
 msgid "Open Document Text"
 msgstr "Texte Open Document"
 
-#: libraries/config/validate.lib.php:198
+#: libraries/config/validate.lib.php:165
 msgid "Could not initialize Drizzle connection library"
 msgstr "Impossible d'initialiser la bibliothèque de connexion Drizzle"
 
-#: libraries/config/validate.lib.php:205 libraries/config/validate.lib.php:212
+#: libraries/config/validate.lib.php:172 libraries/config/validate.lib.php:179
 msgid "Could not connect to Drizzle server"
 msgstr "Connexion au serveur Drizzle impossible"
 
-#: libraries/config/validate.lib.php:223 libraries/config/validate.lib.php:230
+#: libraries/config/validate.lib.php:190 libraries/config/validate.lib.php:197
 msgid "Could not connect to MySQL server"
 msgstr "Connexion au serveur MySQL impossible"
 
-#: libraries/config/validate.lib.php:254
+#: libraries/config/validate.lib.php:220
 msgid "Empty username while using config authentication method"
 msgstr ""
 "Le code d'utilisateur est vide alors que vous utilisez la méthode config"
 
-#: libraries/config/validate.lib.php:258
+#: libraries/config/validate.lib.php:224
 msgid "Empty signon session name while using signon authentication method"
 msgstr "Le nom de session signon est vide"
 
-#: libraries/config/validate.lib.php:262
+#: libraries/config/validate.lib.php:228
 msgid "Empty signon URL while using signon authentication method"
 msgstr "L'URL de signon est vide"
 
-#: libraries/config/validate.lib.php:295
+#: libraries/config/validate.lib.php:261
 msgid "Empty phpMyAdmin control user while using pmadb"
 msgstr "Le controluser est vide"
 
-#: libraries/config/validate.lib.php:299
+#: libraries/config/validate.lib.php:265
 msgid "Empty phpMyAdmin control user password while using pmadb"
 msgstr "Le controlpass est vide"
 
-#: libraries/config/validate.lib.php:385
+#: libraries/config/validate.lib.php:348
 #, php-format
 msgid "Incorrect IP address: %s"
 msgstr "Adresse IP incorrecte : %s"
@@ -5649,7 +5639,7 @@ msgstr "Nouvelle table"
 #: libraries/rte/rte_list.lib.php:57 libraries/rte/rte_list.lib.php:66
 #: libraries/rte/rte_routines.lib.php:877
 #: libraries/rte/rte_routines.lib.php:1389 libraries/tbl_properties.inc.php:92
-#: setup/frames/index.inc.php:127 tbl_structure.php:202
+#: setup/frames/index.inc.php:120 tbl_structure.php:202
 msgid "Name"
 msgstr "Nom"
 
@@ -5895,7 +5885,7 @@ msgid "Format-Specific Options:"
 msgstr "Options spécifiques au format : "
 
 #: libraries/display_select_lang.lib.php:46
-#: libraries/display_select_lang.lib.php:47 setup/frames/index.inc.php:72
+#: libraries/display_select_lang.lib.php:47 setup/frames/index.inc.php:65
 msgid "Language"
 msgstr "Langue"
 
@@ -6598,8 +6588,7 @@ msgstr "Afficher les types MIME"
 #: libraries/replication_gui.lib.php:275 libraries/replication_gui.lib.php:278
 #: libraries/replication_gui.lib.php:335 server_privileges.php:814
 #: server_privileges.php:817 server_privileges.php:873
-#: server_privileges.php:1703 server_privileges.php:2257
-#: server_status.php:1249
+#: server_privileges.php:1703 server_privileges.php:2257 server_status.php:1249
 msgid "Host"
 msgstr "Client"
 
@@ -6970,12 +6959,12 @@ msgstr ""
 msgid "ESRI Shape File"
 msgstr "Fichier de formes ESRI"
 
-#: libraries/import/shp.php:280
+#: libraries/import/shp.php:279
 #, php-format
 msgid "There was an error importing the ESRI shape file: \"%s\"."
 msgstr "Erreur lors de l'importation du fichier de formes ESRI :«%s»."
 
-#: libraries/import/shp.php:336
+#: libraries/import/shp.php:335
 msgid ""
 "You tried to import an invalid file or the imported file contains invalid "
 "data"
@@ -6983,12 +6972,12 @@ msgstr ""
 "Vous avez tenté d'importer un fichier invalide ou ce fichier contient des "
 "données invalides"
 
-#: libraries/import/shp.php:338
+#: libraries/import/shp.php:337
 #, php-format
 msgid "MySQL Spatial Extension does not support ESRI type \"%s\"."
 msgstr "Les données spatiales MySQL ne supportent pas le type ESRI «%s»."
 
-#: libraries/import/shp.php:376
+#: libraries/import/shp.php:375
 msgid "The imported file does not contain any data"
 msgstr "Le fichier importé ne contient aucune donnée"
 
@@ -7532,8 +7521,7 @@ msgstr "Suite à l'exécution, conserver"
 msgid "Definer"
 msgstr "Créateur"
 
-#: libraries/rte/rte_events.lib.php:535
-#: libraries/rte/rte_routines.lib.php:1014
+#: libraries/rte/rte_events.lib.php:535 libraries/rte/rte_routines.lib.php:1014
 #: libraries/rte/rte_triggers.lib.php:417
 msgid "The definer must be in the \"username@hostname\" format"
 msgstr "Le définisseur doit suivre le format «utilisateur@machine»"
@@ -8016,8 +8004,7 @@ msgstr "Utilisateurs"
 msgid "Synchronize"
 msgstr "Synchroniser"
 
-#: libraries/server_links.inc.php:80 server_binlog.php:77
-#: server_status.php:597
+#: libraries/server_links.inc.php:80 server_binlog.php:77 server_status.php:597
 msgid "Binary log"
 msgstr "Log binaire"
 
@@ -8077,7 +8064,7 @@ msgid "Run SQL query/queries on database %s"
 msgstr "Exécuter une ou des requêtes SQL sur la base %s"
 
 #: libraries/sql_query_form.lib.php:260 navigation.php:268
-#: setup/frames/index.inc.php:233
+#: setup/frames/index.inc.php:226
 msgid "Clear"
 msgstr "Vider"
 
@@ -8523,8 +8510,7 @@ msgid "Protocol version"
 msgstr "Version du protocole"
 
 #: main.php:179 server_privileges.php:1547 server_privileges.php:1702
-#: server_privileges.php:1826 server_privileges.php:2256
-#: server_status.php:1248
+#: server_privileges.php:1826 server_privileges.php:2256 server_status.php:1248
 msgid "User"
 msgstr "Utilisateur"
 
@@ -9071,23 +9057,19 @@ msgstr "désactivé"
 msgid "Includes all privileges except GRANT."
 msgstr "Tous les privilèges sauf GRANT."
 
-#: server_privileges.php:35 server_privileges.php:245
-#: server_privileges.php:630
+#: server_privileges.php:35 server_privileges.php:245 server_privileges.php:630
 msgid "Allows altering the structure of existing tables."
 msgstr "Permission de modifier la structure des tables existantes."
 
-#: server_privileges.php:36 server_privileges.php:303
-#: server_privileges.php:636
+#: server_privileges.php:36 server_privileges.php:303 server_privileges.php:636
 msgid "Allows altering and dropping stored routines."
 msgstr "Permission de modifier et de supprimer des procédures stockées."
 
-#: server_privileges.php:37 server_privileges.php:213
-#: server_privileges.php:629
+#: server_privileges.php:37 server_privileges.php:213 server_privileges.php:629
 msgid "Allows creating new databases and tables."
 msgstr "Permission de créer des bases de données et des tables."
 
-#: server_privileges.php:38 server_privileges.php:299
-#: server_privileges.php:635
+#: server_privileges.php:38 server_privileges.php:299 server_privileges.php:635
 msgid "Allows creating stored routines."
 msgstr "Permission de créer des procédures stockées."
 
@@ -9095,29 +9077,24 @@ msgstr "Permission de créer des procédures stockées."
 msgid "Allows creating new tables."
 msgstr "Permission de créer des tables."
 
-#: server_privileges.php:40 server_privileges.php:257
-#: server_privileges.php:633
+#: server_privileges.php:40 server_privileges.php:257 server_privileges.php:633
 msgid "Allows creating temporary tables."
 msgstr "Permission de créer des tables temporaires."
 
-#: server_privileges.php:41 server_privileges.php:307
-#: server_privileges.php:669
+#: server_privileges.php:41 server_privileges.php:307 server_privileges.php:669
 msgid "Allows creating, dropping and renaming user accounts."
 msgstr "Permission de créer, supprimer et renommer des comptes utilisateurs."
 
-#: server_privileges.php:42 server_privileges.php:273
-#: server_privileges.php:286 server_privileges.php:641
-#: server_privileges.php:645
+#: server_privileges.php:42 server_privileges.php:273 server_privileges.php:286
+#: server_privileges.php:641 server_privileges.php:645
 msgid "Allows creating new views."
 msgstr "Permission de créer des vues."
 
-#: server_privileges.php:43 server_privileges.php:209
-#: server_privileges.php:621
+#: server_privileges.php:43 server_privileges.php:209 server_privileges.php:621
 msgid "Allows deleting data."
 msgstr "Permission de détruire des données."
 
-#: server_privileges.php:44 server_privileges.php:217
-#: server_privileges.php:632
+#: server_privileges.php:44 server_privileges.php:217 server_privileges.php:632
 msgid "Allows dropping databases and tables."
 msgstr "Permission d'effacer des bases de données et des tables."
 
@@ -9125,20 +9102,17 @@ msgstr "Permission d'effacer des bases de données et des tables."
 msgid "Allows dropping tables."
 msgstr "Permission d'effacer des tables."
 
-#: server_privileges.php:46 server_privileges.php:277
-#: server_privileges.php:649
+#: server_privileges.php:46 server_privileges.php:277 server_privileges.php:649
 msgid "Allows to set up events for the event scheduler"
 msgstr ""
 "Permission de mettre en place des événements pour le programmateur "
 "d'événements"
 
-#: server_privileges.php:47 server_privileges.php:311
-#: server_privileges.php:637
+#: server_privileges.php:47 server_privileges.php:311 server_privileges.php:637
 msgid "Allows executing stored routines."
 msgstr "Permission d'exécuter des procédures stockées."
 
-#: server_privileges.php:48 server_privileges.php:233
-#: server_privileges.php:624
+#: server_privileges.php:48 server_privileges.php:233 server_privileges.php:624
 msgid "Allows importing data from and exporting data into files."
 msgstr ""
 "Permission d'importer et d'exporter des données à partir de / dans des "
@@ -9151,39 +9125,34 @@ msgstr ""
 "Permission d'ajouter des utilisateurs et des privilèges sans avoir besoin de "
 "recharger les privilèges."
 
-#: server_privileges.php:50 server_privileges.php:241
-#: server_privileges.php:631
+#: server_privileges.php:50 server_privileges.php:241 server_privileges.php:631
 msgid "Allows creating and dropping indexes."
 msgstr "Permission de créer et d'effacer des index."
 
-#: server_privileges.php:51 server_privileges.php:201
-#: server_privileges.php:550 server_privileges.php:619
+#: server_privileges.php:51 server_privileges.php:201 server_privileges.php:550
+#: server_privileges.php:619
 msgid "Allows inserting and replacing data."
 msgstr "Permission d'ajouter et de remplacer des données."
 
-#: server_privileges.php:52 server_privileges.php:261
-#: server_privileges.php:664
+#: server_privileges.php:52 server_privileges.php:261 server_privileges.php:664
 msgid "Allows locking tables for the current thread."
 msgstr ""
 "Permission de verrouiller des enregistrements dans le fil courant (unité "
 "d'exécution)."
 
-#: server_privileges.php:53 server_privileges.php:728
-#: server_privileges.php:730
+#: server_privileges.php:53 server_privileges.php:728 server_privileges.php:730
 msgid "Limits the number of new connections the user may open per hour."
 msgstr ""
 "Limite du nombre de nouvelles connexions qu'un utilisateur peut démarrer, "
 "par heure."
 
-#: server_privileges.php:54 server_privileges.php:716
-#: server_privileges.php:718
+#: server_privileges.php:54 server_privileges.php:716 server_privileges.php:718
 msgid "Limits the number of queries the user may send to the server per hour."
 msgstr ""
 "Limite du nombre de requêtes qu'un utilisateur peut envoyer au serveur, par "
 "heure."
 
-#: server_privileges.php:55 server_privileges.php:722
-#: server_privileges.php:724
+#: server_privileges.php:55 server_privileges.php:722 server_privileges.php:724
 msgid ""
 "Limits the number of commands that change any table or database the user may "
 "execute per hour."
@@ -9191,63 +9160,55 @@ msgstr ""
 "Limite du nombre de commandes changeant une table ou base de données, qu'un "
 "utilisateur peut exécuter, par heure."
 
-#: server_privileges.php:56 server_privileges.php:734
-#: server_privileges.php:736
+#: server_privileges.php:56 server_privileges.php:734 server_privileges.php:736
 msgid "Limits the number of simultaneous connections the user may have."
 msgstr ""
 "Limite le nombre de connexions simultanées autorisées pour un utilisateur."
 
-#: server_privileges.php:57 server_privileges.php:229
-#: server_privileges.php:659
+#: server_privileges.php:57 server_privileges.php:229 server_privileges.php:659
 msgid "Allows viewing processes of all users"
 msgstr "Permission de voir les processus de tous les utilisateurs"
 
-#: server_privileges.php:58 server_privileges.php:237
-#: server_privileges.php:560 server_privileges.php:665
+#: server_privileges.php:58 server_privileges.php:237 server_privileges.php:560
+#: server_privileges.php:665
 msgid "Has no effect in this MySQL version."
 msgstr "Non effectif dans cette version de MySQL."
 
-#: server_privileges.php:59 server_privileges.php:221
-#: server_privileges.php:660
+#: server_privileges.php:59 server_privileges.php:221 server_privileges.php:660
 msgid "Allows reloading server settings and flushing the server's caches."
 msgstr ""
 "Permission de recharger les paramètres du serveur, et de vidanger la mémoire "
 "cache."
 
-#: server_privileges.php:60 server_privileges.php:269
-#: server_privileges.php:667
+#: server_privileges.php:60 server_privileges.php:269 server_privileges.php:667
 msgid "Allows the user to ask where the slaves / masters are."
 msgstr ""
 "Permission de demander où sont les maîtres et les esclaves (système de "
 "duplication)."
 
-#: server_privileges.php:61 server_privileges.php:265
-#: server_privileges.php:668
+#: server_privileges.php:61 server_privileges.php:265 server_privileges.php:668
 msgid "Needed for the replication slaves."
 msgstr "Nécessaire pour les esclaves (système de duplication)."
 
-#: server_privileges.php:62 server_privileges.php:197
-#: server_privileges.php:545 server_privileges.php:618
+#: server_privileges.php:62 server_privileges.php:197 server_privileges.php:545
+#: server_privileges.php:618
 msgid "Allows reading data."
 msgstr "Permission de lire des données."
 
-#: server_privileges.php:63 server_privileges.php:249
-#: server_privileges.php:662
+#: server_privileges.php:63 server_privileges.php:249 server_privileges.php:662
 msgid "Gives access to the complete list of databases."
 msgstr "Permission de voir la liste complète des noms de bases de données."
 
-#: server_privileges.php:64 server_privileges.php:290
-#: server_privileges.php:295 server_privileges.php:634
+#: server_privileges.php:64 server_privileges.php:290 server_privileges.php:295
+#: server_privileges.php:634
 msgid "Allows performing SHOW CREATE VIEW queries."
 msgstr "Permission d'exécuter SHOW CREATE VIEW."
 
-#: server_privileges.php:65 server_privileges.php:225
-#: server_privileges.php:661
+#: server_privileges.php:65 server_privileges.php:225 server_privileges.php:661
 msgid "Allows shutting down the server."
 msgstr "Permission d'arrêter le serveur."
 
-#: server_privileges.php:66 server_privileges.php:253
-#: server_privileges.php:658
+#: server_privileges.php:66 server_privileges.php:253 server_privileges.php:658
 msgid ""
 "Allows connecting, even if maximum number of connections is reached; "
 "required for most administrative operations like setting global variables or "
@@ -9258,13 +9219,12 @@ msgstr ""
 "administratif, par exemple les changements de variables globales ou la "
 "destruction de processus."
 
-#: server_privileges.php:67 server_privileges.php:281
-#: server_privileges.php:650
+#: server_privileges.php:67 server_privileges.php:281 server_privileges.php:650
 msgid "Allows creating and dropping triggers"
 msgstr "Permission de créer et de supprimer des déclencheurs"
 
-#: server_privileges.php:68 server_privileges.php:205
-#: server_privileges.php:555 server_privileges.php:620
+#: server_privileges.php:68 server_privileges.php:205 server_privileges.php:555
+#: server_privileges.php:620
 msgid "Allows changing data."
 msgstr "Permission de changer des données."
 
@@ -10951,7 +10911,7 @@ msgstr "Valeur pour la session"
 msgid "Global value"
 msgstr "Valeur globale"
 
-#: setup/frames/config.inc.php:38 setup/frames/index.inc.php:227
+#: setup/frames/config.inc.php:38 setup/frames/index.inc.php:220
 msgid "Download"
 msgstr "Télécharger"
 
@@ -10961,11 +10921,11 @@ msgstr ""
 "Jeu de formulaires incorrect, vérifiez le tableau $formsets dans setup/"
 "frames/form.inc.php"
 
-#: setup/frames/index.inc.php:49
+#: setup/frames/index.inc.php:42
 msgid "Cannot load or save configuration"
 msgstr "Impossible de charger ou sauvegarder la configuration"
 
-#: setup/frames/index.inc.php:50
+#: setup/frames/index.inc.php:43
 msgid ""
 "Please create web server writable folder [em]config[/em] in phpMyAdmin top "
 "level directory as described in [a@Documentation."
@@ -10976,7 +10936,7 @@ msgstr ""
 "décrit dans la [a@Documentation.html#setup_script]documentation[/a]. Sinon "
 "vous ne pourrez que télécharger ou afficher la configuration."
 
-#: setup/frames/index.inc.php:57
+#: setup/frames/index.inc.php:50
 msgid ""
 "You are not using a secure connection; all data (including potentially "
 "sensitive information, like passwords) is transferred unencrypted!"
@@ -10984,7 +10944,7 @@ msgstr ""
 "Votre connexion n'est pas sécurisée; toutes les données sont transférées non-"
 "encryptées !"
 
-#: setup/frames/index.inc.php:61
+#: setup/frames/index.inc.php:54
 #, php-format
 msgid ""
 "If your server is also configured to accept HTTPS requests follow [a@%s]this "
@@ -10993,15 +10953,15 @@ msgstr ""
 "Si votre serveur accepte les requêtes HTTPS, utilisez une [a@%s]connexion "
 "sécurisée[/a]."
 
-#: setup/frames/index.inc.php:65
+#: setup/frames/index.inc.php:58
 msgid "Insecure connection"
 msgstr "Connexion non sécurisée"
 
-#: setup/frames/index.inc.php:94
+#: setup/frames/index.inc.php:87
 msgid "Configuration saved."
 msgstr "Configuration sauvegardée."
 
-#: setup/frames/index.inc.php:95
+#: setup/frames/index.inc.php:88
 msgid ""
 "Configuration saved to file config/config.inc.php in phpMyAdmin top level "
 "directory, copy it to top level one and delete directory config to use it."
@@ -11010,55 +10970,55 @@ msgstr ""
 "copiez ce fichier au répertoire racine de phpMyAdmin et effacez le "
 "répertoire config afin de rendre ce fichier de configuration effectif."
 
-#: setup/frames/index.inc.php:102 setup/frames/menu.inc.php:15
+#: setup/frames/index.inc.php:95 setup/frames/menu.inc.php:15
 msgid "Overview"
 msgstr "Survol"
 
-#: setup/frames/index.inc.php:110
+#: setup/frames/index.inc.php:103
 msgid "Show hidden messages (#MSG_COUNT)"
 msgstr "Afficher les messages cachés (#MSG_COUNT)"
 
-#: setup/frames/index.inc.php:150
+#: setup/frames/index.inc.php:143
 msgid "There are no configured servers"
 msgstr "Aucun serveur n'est configuré"
 
-#: setup/frames/index.inc.php:158
+#: setup/frames/index.inc.php:151
 msgid "New server"
 msgstr "Nouveau serveur"
 
-#: setup/frames/index.inc.php:187
+#: setup/frames/index.inc.php:180
 msgid "Default language"
 msgstr "Langue par défaut"
 
-#: setup/frames/index.inc.php:197
+#: setup/frames/index.inc.php:190
 msgid "let the user choose"
 msgstr "laisser l'utilisateur choisir"
 
-#: setup/frames/index.inc.php:208
+#: setup/frames/index.inc.php:201
 msgid "- none -"
 msgstr "- aucun -"
 
-#: setup/frames/index.inc.php:211
+#: setup/frames/index.inc.php:204
 msgid "Default server"
 msgstr "Serveur par défaut"
 
-#: setup/frames/index.inc.php:221
+#: setup/frames/index.inc.php:214
 msgid "End of line"
 msgstr "Fin de ligne"
 
-#: setup/frames/index.inc.php:226
+#: setup/frames/index.inc.php:219
 msgid "Display"
 msgstr "Afficher"
 
-#: setup/frames/index.inc.php:230
+#: setup/frames/index.inc.php:223
 msgid "Load"
 msgstr "Charger"
 
-#: setup/frames/index.inc.php:241
+#: setup/frames/index.inc.php:234
 msgid "phpMyAdmin homepage"
 msgstr "Site de phpMyAdmin"
 
-#: setup/frames/index.inc.php:242
+#: setup/frames/index.inc.php:236
 msgid "Donate"
 msgstr "Faire un don"
 
@@ -11094,41 +11054,7 @@ msgstr "Ignorer les erreurs"
 msgid "Show form"
 msgstr "Afficher le formulaire"
 
-#: setup/lib/index.lib.php:122
-msgid ""
-"Neither URL wrapper nor CURL is available. Version check is not possible."
-msgstr ""
-"Ni CURL ni URL wrapper ne sont disponibles; impossible de chercher une "
-"nouvelle version."
-
-#: setup/lib/index.lib.php:132
-msgid ""
-"Reading of version failed. Maybe you're offline or the upgrade server does "
-"not respond."
-msgstr "Échec lors de la vérification de version."
-
-#: setup/lib/index.lib.php:152
-msgid "Got invalid version string from server"
-msgstr "Un numéro de version invalide a été reçu du serveur"
-
-#: setup/lib/index.lib.php:162
-msgid "Unparsable version string"
-msgstr "Analyse impossible du numéro de version"
-
-#: setup/lib/index.lib.php:180
-#, php-format
-msgid ""
-"You are using Git version, run [kbd]git pull[/kbd] :-)[br]The latest stable "
-"version is %s, released on %s."
-msgstr ""
-"Vous utilisez une version phpMyAdmin obtenue grâce à git, faites [kbd]git "
-"pull[/kbd] :-)[br]La dernière version stable est %s, publiée le %s."
-
-#: setup/lib/index.lib.php:186
-msgid "No newer stable version is available"
-msgstr "Aucune version stable plus récente n'est disponible"
-
-#: setup/lib/index.lib.php:274
+#: setup/lib/index.lib.php:175
 #, php-format
 msgid ""
 "This %soption%s should be disabled as it allows attackers to bruteforce "
@@ -11141,7 +11067,7 @@ msgstr ""
 "réellement besoin, utilisez la %sliste des serveurs mandataires de confiance"
 "%s."
 
-#: setup/lib/index.lib.php:276
+#: setup/lib/index.lib.php:177
 msgid ""
 "You didn't have blowfish secret set and have enabled cookie authentication, "
 "so a key was automatically generated for you. It is used to encrypt cookies; "
@@ -11151,7 +11077,7 @@ msgstr ""
 "cookie , alors une clé secrète a été générée pour vous. Elle sert à "
 "encrypter les cookies, vous n'avez pas à vous en souvenir."
 
-#: setup/lib/index.lib.php:277
+#: setup/lib/index.lib.php:178
 #, php-format
 msgid ""
 "%sBzip2 compression and decompression%s requires functions (%s) which are "
@@ -11160,7 +11086,7 @@ msgstr ""
 "La %scompression et décompression Bzip2%s requièrent des fonctions (%s) non "
 "disponibles sur ce serveur."
 
-#: setup/lib/index.lib.php:279
+#: setup/lib/index.lib.php:180
 msgid ""
 "This value should be double checked to ensure that this directory is neither "
 "world accessible nor readable or writable by other users on your server."
@@ -11168,12 +11094,12 @@ msgstr ""
 "Assurez-vous que ce répertoire n'est pas accessible par les autres "
 "utilisateurs."
 
-#: setup/lib/index.lib.php:280
+#: setup/lib/index.lib.php:181
 #, php-format
 msgid "This %soption%s should be enabled if your web server supports it."
 msgstr "Cette %soption%s devrait être activée si votre serveur web le permet."
 
-#: setup/lib/index.lib.php:282
+#: setup/lib/index.lib.php:183
 #, php-format
 msgid ""
 "%sGZip compression and decompression%s requires functions (%s) which are "
@@ -11182,7 +11108,7 @@ msgstr ""
 "La %scompression et décompression GZip%s requièrent des fonctions (%s) non "
 "disponibles sur ce serveur."
 
-#: setup/lib/index.lib.php:284
+#: setup/lib/index.lib.php:185
 #, php-format
 msgid ""
 "%sLogin cookie validity%s greater than 1440 seconds may cause random session "
@@ -11194,7 +11120,7 @@ msgstr ""
 "paramètre %ssession.gc_maxlifetime%s a une plus petite valeur (actuellement "
 "%d)."
 
-#: setup/lib/index.lib.php:286
+#: setup/lib/index.lib.php:187
 #, php-format
 msgid ""
 "%sLogin cookie validity%s should be set to 1800 seconds (30 minutes) at "
@@ -11204,7 +11130,7 @@ msgstr ""
 "plus 1800 secondes (30 minutes). Une valeur plus grande que 1800 pose un "
 "risque."
 
-#: setup/lib/index.lib.php:288
+#: setup/lib/index.lib.php:189
 #, php-format
 msgid ""
 "If using cookie authentication and %sLogin cookie store%s is not 0, %sLogin "
@@ -11214,7 +11140,7 @@ msgstr ""
 "cookie store%s n'a pas une valeur de 0, le paramètre %sLogin cookie validity"
 "%s doit avoir une valeur plus petite ou égale à celui-ci."
 
-#: setup/lib/index.lib.php:290
+#: setup/lib/index.lib.php:191
 #, php-format
 msgid ""
 "If you feel this is necessary, use additional protection settings - %shost "
@@ -11228,7 +11154,7 @@ msgstr ""
 "appartient à un fournisseur via lequel des milliers d'utilisateurs, vous y "
 "compris, sont connectés."
 
-#: setup/lib/index.lib.php:292
+#: setup/lib/index.lib.php:193
 #, php-format
 msgid ""
 "You set the [kbd]config[/kbd] authentication type and included username and "
@@ -11243,7 +11169,7 @@ msgstr ""
 "suggéré de régler votre %stype d'authentification%s à [kbd]cookie[/kbd] ou "
 "[kbd]http[/kbd]."
 
-#: setup/lib/index.lib.php:294
+#: setup/lib/index.lib.php:195
 #, php-format
 msgid ""
 "%sZip compression%s requires functions (%s) which are unavailable on this "
@@ -11252,7 +11178,7 @@ msgstr ""
 "La %scompression Zip%s requiert des fonctions (%s) non disponibles sur ce "
 "serveur."
 
-#: setup/lib/index.lib.php:296
+#: setup/lib/index.lib.php:197
 #, php-format
 msgid ""
 "%sZip decompression%s requires functions (%s) which are unavailable on this "
@@ -11261,23 +11187,23 @@ msgstr ""
 "La %sdécompression Zip%s requiert des fonctions (%s) non disponibles sur ce "
 "serveur."
 
-#: setup/lib/index.lib.php:324
+#: setup/lib/index.lib.php:225
 msgid "You should use SSL connections if your database server supports it."
 msgstr "Vous devriez utiliser des connexions SSL si votre serveur le permet."
 
-#: setup/lib/index.lib.php:337
+#: setup/lib/index.lib.php:238
 msgid "You should use mysqli for performance reasons."
 msgstr "Il est recommandé d'utiliser mysqli pour des raisons de performance."
 
-#: setup/lib/index.lib.php:368
+#: setup/lib/index.lib.php:269
 msgid "You allow for connecting to the server without a password."
 msgstr "Vous permettez les connexions au serveur sans mot de passe."
 
-#: setup/lib/index.lib.php:390
+#: setup/lib/index.lib.php:291
 msgid "Key is too short, it should have at least 8 characters."
 msgstr "La clé doit avoir un minimum de 8 caractères."
 
-#: setup/lib/index.lib.php:397
+#: setup/lib/index.lib.php:298
 msgid "Key should contain letters, numbers [em]and[/em] special characters."
 msgstr ""
 "La clé devrait contenir des lettres, des nombres [em]et[/em] des caractères "
@@ -12021,6 +11947,11 @@ msgstr "Transformations disponibles"
 msgctxt "for MIME transformation"
 msgid "Description"
 msgstr "Description"
+
+#: url.php:33
+#, php-format
+msgid "Taking you to <a href=\"%s\">%s</a>."
+msgstr ""
 
 #: user_password.php:34
 msgid "You don't have sufficient privileges to be here right now!"
@@ -13313,6 +13244,33 @@ msgstr ""
 #: po/advisory_rules.php:273
 msgid "concurrent_insert is set to 0"
 msgstr "Le paramètre concurrent_insert a une valeur de 0"
+
+#~ msgid ""
+#~ "Neither URL wrapper nor CURL is available. Version check is not possible."
+#~ msgstr ""
+#~ "Ni CURL ni URL wrapper ne sont disponibles; impossible de chercher une "
+#~ "nouvelle version."
+
+#~ msgid ""
+#~ "Reading of version failed. Maybe you're offline or the upgrade server "
+#~ "does not respond."
+#~ msgstr "Échec lors de la vérification de version."
+
+#~ msgid "Got invalid version string from server"
+#~ msgstr "Un numéro de version invalide a été reçu du serveur"
+
+#~ msgid "Unparsable version string"
+#~ msgstr "Analyse impossible du numéro de version"
+
+#~ msgid ""
+#~ "You are using Git version, run [kbd]git pull[/kbd] :-)[br]The latest "
+#~ "stable version is %s, released on %s."
+#~ msgstr ""
+#~ "Vous utilisez une version phpMyAdmin obtenue grâce à git, faites [kbd]git "
+#~ "pull[/kbd] :-)[br]La dernière version stable est %s, publiée le %s."
+
+#~ msgid "No newer stable version is available"
+#~ msgstr "Aucune version stable plus récente n'est disponible"
 
 #~ msgid "phpMyAdmin is more friendly with a <b>frames-capable</b> browser."
 #~ msgstr ""

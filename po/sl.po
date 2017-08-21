@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: phpMyAdmin 3.5.8.2\n"
 "Report-Msgid-Bugs-To: phpmyadmin-devel@lists.sourceforge.net\n"
-"POT-Creation-Date: 2017-02-27 10:42-0500\n"
+"POT-Creation-Date: 2017-08-21 13:29-0400\n"
 "PO-Revision-Date: 2012-11-24 17:11+0200\n"
 "Last-Translator: Domen <dbc334@gmail.com>\n"
 "Language-Team: Slovenian <http://l10n.cihar.com/projects/phpmyadmin/3-5/sl/"
@@ -25,8 +25,7 @@ msgstr "Pokaži vse"
 #: libraries/common.lib.php:2444
 #: libraries/schema/Pdf_Relation_Schema.class.php:1149
 #: libraries/schema/Pdf_Relation_Schema.class.php:1173
-#: libraries/schema/User_Schema.class.php:396
-#: libraries/select_lang.lib.php:523
+#: libraries/schema/User_Schema.class.php:396 libraries/select_lang.lib.php:523
 msgid "Page number:"
 msgstr "Številka strani:"
 
@@ -68,18 +67,18 @@ msgstr "Iskanje"
 #: libraries/select_server.lib.php:93 libraries/sql_query_form.lib.php:356
 #: libraries/sql_query_form.lib.php:418 libraries/sql_query_form.lib.php:471
 #: libraries/tbl_properties.inc.php:575 main.php:115 navigation.php:170
-#: navigation.php:208 pmd_pdf.php:127 prefs_manage.php:263
-#: prefs_manage.php:314 server_binlog.php:109 server_privileges.php:746
-#: server_privileges.php:1790 server_privileges.php:2154
-#: server_privileges.php:2201 server_privileges.php:2244
-#: server_replication.php:233 server_replication.php:316
-#: server_replication.php:347 server_synchronize.php:1309 tbl_change.php:340
-#: tbl_change.php:1071 tbl_change.php:1108 tbl_chart.php:187
-#: tbl_indexes.php:288 tbl_operations.php:284 tbl_operations.php:321
-#: tbl_operations.php:525 tbl_operations.php:587 tbl_operations.php:790
-#: tbl_select.php:237 tbl_structure.php:688 tbl_structure.php:723
-#: tbl_tracking.php:438 tbl_tracking.php:576 tbl_zoom_select.php:320
-#: view_create.php:181 view_operations.php:99
+#: navigation.php:208 pmd_pdf.php:127 prefs_manage.php:263 prefs_manage.php:314
+#: server_binlog.php:109 server_privileges.php:746 server_privileges.php:1790
+#: server_privileges.php:2154 server_privileges.php:2201
+#: server_privileges.php:2244 server_replication.php:233
+#: server_replication.php:316 server_replication.php:347
+#: server_synchronize.php:1309 tbl_change.php:340 tbl_change.php:1071
+#: tbl_change.php:1108 tbl_chart.php:187 tbl_indexes.php:288
+#: tbl_operations.php:284 tbl_operations.php:321 tbl_operations.php:525
+#: tbl_operations.php:587 tbl_operations.php:790 tbl_select.php:237
+#: tbl_structure.php:688 tbl_structure.php:723 tbl_tracking.php:438
+#: tbl_tracking.php:576 tbl_zoom_select.php:320 view_create.php:181
+#: view_operations.php:99
 msgid "Go"
 msgstr "Izvedi"
 
@@ -88,9 +87,9 @@ msgstr "Izvedi"
 msgid "Keyname"
 msgstr "Ime ključa"
 
-#: browse_foreigners.php:178 browse_foreigners.php:180
-#: server_collations.php:54 server_collations.php:66 server_engines.php:55
-#: server_plugins.php:147 server_status.php:1488
+#: browse_foreigners.php:178 browse_foreigners.php:180 server_collations.php:54
+#: server_collations.php:66 server_engines.php:55 server_plugins.php:147
+#: server_status.php:1488
 msgid "Description"
 msgstr "Opis"
 
@@ -498,9 +497,8 @@ msgid "Submit Query"
 msgstr "Izvedi poizvedbo"
 
 #: db_search.php:31 libraries/auth/config.auth.lib.php:77
-#: libraries/auth/config.auth.lib.php:98
-#: libraries/auth/cookie.auth.lib.php:570 libraries/auth/http.auth.lib.php:51
-#: libraries/auth/signon.auth.lib.php:237
+#: libraries/auth/config.auth.lib.php:98 libraries/auth/cookie.auth.lib.php:570
+#: libraries/auth/http.auth.lib.php:51 libraries/auth/signon.auth.lib.php:237
 msgid "Access denied"
 msgstr "Dostop zavrnjen"
 
@@ -552,7 +550,7 @@ msgstr "Izbrišem zadetke v tabeli %s?"
 #: libraries/schema/User_Schema.class.php:308
 #: libraries/schema/User_Schema.class.php:338
 #: libraries/sql_query_form.lib.php:411 pmd_general.php:417
-#: setup/frames/index.inc.php:140 setup/frames/index.inc.php:231
+#: setup/frames/index.inc.php:133 setup/frames/index.inc.php:224
 #: tbl_tracking.php:448 tbl_tracking.php:469 tbl_tracking.php:526
 msgid "Delete"
 msgstr "Izbriši"
@@ -683,8 +681,8 @@ msgstr "Preveri prekoračene"
 msgid "Export"
 msgstr "Izvozi"
 
-#: db_structure.php:593 db_structure.php:649
-#: libraries/display_tbl.lib.php:2610 tbl_structure.php:629
+#: db_structure.php:593 db_structure.php:649 libraries/display_tbl.lib.php:2610
+#: tbl_structure.php:629
 msgid "Print view"
 msgstr "Pogled za tiskanje"
 
@@ -695,8 +693,8 @@ msgstr "Izprazni"
 
 #: db_structure.php:599 db_tracking.php:105 enum_editor.php:86
 #: libraries/Index.class.php:490 libraries/common.lib.php:3298
-#: libraries/common.lib.php:3299 server_databases.php:269
-#: tbl_structure.php:150 tbl_structure.php:151 tbl_structure.php:589
+#: libraries/common.lib.php:3299 server_databases.php:269 tbl_structure.php:150
+#: tbl_structure.php:151 tbl_structure.php:589
 msgid "Drop"
 msgstr "Zavrzi"
 
@@ -744,8 +742,7 @@ msgstr "Sledene tabele"
 #: libraries/header_printview.inc.php:59 server_databases.php:161
 #: server_privileges.php:1836 server_privileges.php:1899
 #: server_privileges.php:2162 server_status.php:1250
-#: server_synchronize.php:1277 server_synchronize.php:1281
-#: tbl_tracking.php:655
+#: server_synchronize.php:1277 server_synchronize.php:1281 tbl_tracking.php:655
 msgid "Database"
 msgstr "Zbirka podatkov"
 
@@ -1164,7 +1161,7 @@ msgstr "Zapri"
 #: libraries/common.lib.php:644 libraries/common.lib.php:1193
 #: libraries/common.lib.php:3302 libraries/common.lib.php:3303
 #: libraries/config/messages.inc.php:484 libraries/display_tbl.lib.php:1394
-#: libraries/schema/User_Schema.class.php:196 setup/frames/index.inc.php:139
+#: libraries/schema/User_Schema.class.php:196 setup/frames/index.inc.php:132
 msgid "Edit"
 msgstr "Uredi"
 
@@ -1388,8 +1385,7 @@ msgstr "Vprašanja"
 msgid "Traffic"
 msgstr "Promet"
 
-#: js/messages.php:137 libraries/server_links.inc.php:69
-#: server_status.php:1572
+#: js/messages.php:137 libraries/server_links.inc.php:69 server_status.php:1572
 msgid "Settings"
 msgstr "Nastavitve"
 
@@ -1875,7 +1871,7 @@ msgstr "%d ni veljavna številka vrstice."
 #: js/messages.php:291 libraries/config/FormDisplay.tpl.php:355
 #: libraries/schema/User_Schema.class.php:352
 #: libraries/tbl_properties.inc.php:714 setup/frames/config.inc.php:39
-#: setup/frames/index.inc.php:229 tbl_change.php:1023
+#: setup/frames/index.inc.php:222 tbl_change.php:1023
 #: tbl_gis_visualization.php:193 tbl_indexes.php:280 tbl_relation.php:559
 msgid "Save"
 msgstr "Shrani"
@@ -2038,7 +2034,7 @@ msgstr "Spremeni geslo"
 msgid "More"
 msgstr "Več"
 
-#: js/messages.php:367 setup/lib/index.lib.php:173
+#: js/messages.php:367
 #, php-format
 msgid ""
 "A newer version of phpMyAdmin is available and you should consider "
@@ -2620,8 +2616,8 @@ msgstr "Motiv"
 msgid "Cannot connect: invalid settings."
 msgstr "Ne morem se povezati: neveljavne nastavitve."
 
-#: libraries/auth/config.auth.lib.php:87
-#: libraries/auth/cookie.auth.lib.php:166 libraries/auth/http.auth.lib.php:64
+#: libraries/auth/config.auth.lib.php:87 libraries/auth/cookie.auth.lib.php:166
+#: libraries/auth/http.auth.lib.php:64
 #, php-format
 msgid "Welcome to %s"
 msgstr "Dobrodošli v %s"
@@ -2775,9 +2771,8 @@ msgstr "Ne morem odpreti datoteke: %s"
 msgid "shared"
 msgstr "deljeno"
 
-#: libraries/build_html_for_db.lib.php:26
-#: libraries/config/messages.inc.php:185 libraries/export/xml.php:51
-#: server_status.php:604
+#: libraries/build_html_for_db.lib.php:26 libraries/config/messages.inc.php:185
+#: libraries/export/xml.php:51 server_status.php:604
 msgid "Tables"
 msgstr "Tabele"
 
@@ -3160,28 +3155,28 @@ msgid "neither of the above"
 msgstr "nič od zgoraj"
 
 #: libraries/config/FormDisplay.class.php:83
-#: libraries/config/validate.lib.php:438
+#: libraries/config/validate.lib.php:401
 msgid "Not a positive number"
 msgstr "Ni pozitivno število"
 
 #: libraries/config/FormDisplay.class.php:84
-#: libraries/config/validate.lib.php:450
+#: libraries/config/validate.lib.php:413
 msgid "Not a non-negative number"
 msgstr "Ni nenegativno število"
 
 #: libraries/config/FormDisplay.class.php:85
-#: libraries/config/validate.lib.php:426
+#: libraries/config/validate.lib.php:389
 msgid "Not a valid port number"
 msgstr "Neveljavna številka vrat"
 
 #: libraries/config/FormDisplay.class.php:86
 #: libraries/config/FormDisplay.class.php:547
-#: libraries/config/validate.lib.php:378 libraries/config/validate.lib.php:465
+#: libraries/config/validate.lib.php:341 libraries/config/validate.lib.php:428
 msgid "Incorrect value"
 msgstr "Napačna vrednost"
 
 #: libraries/config/FormDisplay.class.php:87
-#: libraries/config/validate.lib.php:479
+#: libraries/config/validate.lib.php:442
 #, php-format
 msgid "Value must be equal or lower than %s"
 msgstr "Vrednost mora biti enaka ali nižja od %s"
@@ -3404,7 +3399,7 @@ msgid "Compress on the fly"
 msgstr "Stisni med izvajanjem"
 
 #: libraries/config/messages.inc.php:45 setup/frames/config.inc.php:25
-#: setup/frames/index.inc.php:167
+#: setup/frames/index.inc.php:160
 msgid "Configuration file"
 msgstr "Konfiguracijska datoteka"
 
@@ -3831,7 +3826,7 @@ msgid "Customize appearance of the navigation frame"
 msgstr "Prilagodite prikaz navigacijskega okvirja"
 
 #: libraries/config/messages.inc.php:183 libraries/select_server.lib.php:35
-#: setup/frames/index.inc.php:112
+#: setup/frames/index.inc.php:105
 msgid "Servers"
 msgstr "Strežniki"
 
@@ -3877,8 +3872,7 @@ msgstr ""
 "html#cfg_TitleTable]dokumentacijo[/a] za čarobne nize, ki jih lahko "
 "uporabite za pridobitev posebnih vrednosti."
 
-#: libraries/config/messages.inc.php:196
-#: libraries/navigation_header.inc.php:86
+#: libraries/config/messages.inc.php:196 libraries/navigation_header.inc.php:86
 #: libraries/navigation_header.inc.php:89
 #: libraries/navigation_header.inc.php:92
 msgid "Query window"
@@ -4625,7 +4619,7 @@ msgstr "Konfiguracijska datoteka SweKey"
 msgid "Authentication method to use"
 msgstr "Način overovitve za uporabo"
 
-#: libraries/config/messages.inc.php:373 setup/frames/index.inc.php:128
+#: libraries/config/messages.inc.php:373 setup/frames/index.inc.php:121
 msgid "Authentication type"
 msgstr "Vrsta overovitve"
 
@@ -5369,7 +5363,7 @@ msgstr ""
 msgid "Verbose multiple statements"
 msgstr "Zgosti večkratne stavke"
 
-#: libraries/config/messages.inc.php:521 setup/frames/index.inc.php:243
+#: libraries/config/messages.inc.php:521
 msgid "Check for latest version"
 msgstr "Preveri za najnovejšo različico"
 
@@ -5377,11 +5371,7 @@ msgstr "Preveri za najnovejšo različico"
 msgid "Enables check for latest version on main phpMyAdmin page"
 msgstr "Omogoča preverjanje najnovejše različice na glavni strani phpMyAdmin"
 
-#: libraries/config/messages.inc.php:523 setup/lib/index.lib.php:121
-#: setup/lib/index.lib.php:131 setup/lib/index.lib.php:151
-#: setup/lib/index.lib.php:161 setup/lib/index.lib.php:172
-#: setup/lib/index.lib.php:179 setup/lib/index.lib.php:185
-#: setup/lib/index.lib.php:224
+#: libraries/config/messages.inc.php:523 setup/lib/index.lib.php:125
 msgid "Version check"
 msgstr "Preverjanje različice"
 
@@ -5457,39 +5447,39 @@ msgstr "Microsoft Word 2000"
 msgid "Open Document Text"
 msgstr "Besedilo Open Document"
 
-#: libraries/config/validate.lib.php:198
+#: libraries/config/validate.lib.php:165
 msgid "Could not initialize Drizzle connection library"
 msgstr "Ne morem inicializirati knjižnice za povezavo Drizzle"
 
-#: libraries/config/validate.lib.php:205 libraries/config/validate.lib.php:212
+#: libraries/config/validate.lib.php:172 libraries/config/validate.lib.php:179
 msgid "Could not connect to Drizzle server"
 msgstr "Ne morem se povezati s strežnikom Drizzle"
 
-#: libraries/config/validate.lib.php:223 libraries/config/validate.lib.php:230
+#: libraries/config/validate.lib.php:190 libraries/config/validate.lib.php:197
 msgid "Could not connect to MySQL server"
 msgstr "Ne morem se povezati s strežnikom MySQL"
 
-#: libraries/config/validate.lib.php:254
+#: libraries/config/validate.lib.php:220
 msgid "Empty username while using config authentication method"
 msgstr "Počisti uporabniško ime med uporabo overitvenega načina config"
 
-#: libraries/config/validate.lib.php:258
+#: libraries/config/validate.lib.php:224
 msgid "Empty signon session name while using signon authentication method"
 msgstr "Počisti ime seje signon med uporabo overitvenega načina signon"
 
-#: libraries/config/validate.lib.php:262
+#: libraries/config/validate.lib.php:228
 msgid "Empty signon URL while using signon authentication method"
 msgstr "Počisti URL signon med uporabo overitvenega načina signon"
 
-#: libraries/config/validate.lib.php:295
+#: libraries/config/validate.lib.php:261
 msgid "Empty phpMyAdmin control user while using pmadb"
 msgstr "Počisti krmilnega uporabnika phpMyAdmin med uporabo pmadb"
 
-#: libraries/config/validate.lib.php:299
+#: libraries/config/validate.lib.php:265
 msgid "Empty phpMyAdmin control user password while using pmadb"
 msgstr "Počisti geslo krmilnega uporabnika phpMyAdmin med uporabo pmadb"
 
-#: libraries/config/validate.lib.php:385
+#: libraries/config/validate.lib.php:348
 #, php-format
 msgid "Incorrect IP address: %s"
 msgstr "Napačen IP-naslov: %s"
@@ -5623,7 +5613,7 @@ msgstr "Ustvari tabelo"
 #: libraries/rte/rte_list.lib.php:57 libraries/rte/rte_list.lib.php:66
 #: libraries/rte/rte_routines.lib.php:877
 #: libraries/rte/rte_routines.lib.php:1389 libraries/tbl_properties.inc.php:92
-#: setup/frames/index.inc.php:127 tbl_structure.php:202
+#: setup/frames/index.inc.php:120 tbl_structure.php:202
 msgid "Name"
 msgstr "Ime"
 
@@ -5869,7 +5859,7 @@ msgid "Format-Specific Options:"
 msgstr "Možnosti odvisne od oblike:"
 
 #: libraries/display_select_lang.lib.php:46
-#: libraries/display_select_lang.lib.php:47 setup/frames/index.inc.php:72
+#: libraries/display_select_lang.lib.php:47 setup/frames/index.inc.php:65
 msgid "Language"
 msgstr "Jezik"
 
@@ -6564,8 +6554,7 @@ msgstr "Prikaži vrste MIME"
 #: libraries/replication_gui.lib.php:275 libraries/replication_gui.lib.php:278
 #: libraries/replication_gui.lib.php:335 server_privileges.php:814
 #: server_privileges.php:817 server_privileges.php:873
-#: server_privileges.php:1703 server_privileges.php:2257
-#: server_status.php:1249
+#: server_privileges.php:1703 server_privileges.php:2257 server_status.php:1249
 msgid "Host"
 msgstr "Gostitelj"
 
@@ -6932,12 +6921,12 @@ msgstr ""
 msgid "ESRI Shape File"
 msgstr "Datoteka oblik ESRI"
 
-#: libraries/import/shp.php:280
+#: libraries/import/shp.php:279
 #, php-format
 msgid "There was an error importing the ESRI shape file: \"%s\"."
 msgstr "Med uvažanjem datoteke oblik ESRI je prišlo do napake: \"%s\"."
 
-#: libraries/import/shp.php:336
+#: libraries/import/shp.php:335
 msgid ""
 "You tried to import an invalid file or the imported file contains invalid "
 "data"
@@ -6945,12 +6934,12 @@ msgstr ""
 "Poskušali ste uvoziti neveljavno datoteko ali pa uvožena datoteka vsebuje "
 "neveljavne podatke"
 
-#: libraries/import/shp.php:338
+#: libraries/import/shp.php:337
 #, php-format
 msgid "MySQL Spatial Extension does not support ESRI type \"%s\"."
 msgstr "Prostorska razširitev MySQL ne podpira ESRI vrste \"%s\"."
 
-#: libraries/import/shp.php:376
+#: libraries/import/shp.php:375
 msgid "The imported file does not contain any data"
 msgstr "Uvožena datoteka ne vsebuje nobenih podatkov"
 
@@ -7489,8 +7478,7 @@ msgstr "Ob dokončanju ohrani"
 msgid "Definer"
 msgstr "Opredeljevalec"
 
-#: libraries/rte/rte_events.lib.php:535
-#: libraries/rte/rte_routines.lib.php:1014
+#: libraries/rte/rte_events.lib.php:535 libraries/rte/rte_routines.lib.php:1014
 #: libraries/rte/rte_triggers.lib.php:417
 msgid "The definer must be in the \"username@hostname\" format"
 msgstr "Opredeljevalec mora biti oblike \"uporabniškoime@imegostitelja\""
@@ -7973,8 +7961,7 @@ msgstr "Uporabniki"
 msgid "Synchronize"
 msgstr "Sinhroniziraj"
 
-#: libraries/server_links.inc.php:80 server_binlog.php:77
-#: server_status.php:597
+#: libraries/server_links.inc.php:80 server_binlog.php:77 server_status.php:597
 msgid "Binary log"
 msgstr "Dvojiški dnevnik"
 
@@ -8034,7 +8021,7 @@ msgid "Run SQL query/queries on database %s"
 msgstr "Izvedi poizvedbo/poizvedbe SQL na zbirki podatkov %s"
 
 #: libraries/sql_query_form.lib.php:260 navigation.php:268
-#: setup/frames/index.inc.php:233
+#: setup/frames/index.inc.php:226
 msgid "Clear"
 msgstr "Počisti"
 
@@ -8472,8 +8459,7 @@ msgid "Protocol version"
 msgstr "Različica protokola"
 
 #: main.php:179 server_privileges.php:1547 server_privileges.php:1702
-#: server_privileges.php:1826 server_privileges.php:2256
-#: server_status.php:1248
+#: server_privileges.php:1826 server_privileges.php:2256 server_status.php:1248
 msgid "User"
 msgstr "Uporabnik"
 
@@ -9014,23 +9000,19 @@ msgstr "onemogočeno"
 msgid "Includes all privileges except GRANT."
 msgstr "Vsebuje vse privilegije razen GRANT."
 
-#: server_privileges.php:35 server_privileges.php:245
-#: server_privileges.php:630
+#: server_privileges.php:35 server_privileges.php:245 server_privileges.php:630
 msgid "Allows altering the structure of existing tables."
 msgstr "Omogoča spreminjanje strukture obstoječih tabel."
 
-#: server_privileges.php:36 server_privileges.php:303
-#: server_privileges.php:636
+#: server_privileges.php:36 server_privileges.php:303 server_privileges.php:636
 msgid "Allows altering and dropping stored routines."
 msgstr "Omogoča ustvarjanje in brisanje shranjenih rutin."
 
-#: server_privileges.php:37 server_privileges.php:213
-#: server_privileges.php:629
+#: server_privileges.php:37 server_privileges.php:213 server_privileges.php:629
 msgid "Allows creating new databases and tables."
 msgstr "Omogoča ustvarjanje novih zbirk podatkov in tabel."
 
-#: server_privileges.php:38 server_privileges.php:299
-#: server_privileges.php:635
+#: server_privileges.php:38 server_privileges.php:299 server_privileges.php:635
 msgid "Allows creating stored routines."
 msgstr "Omogoča ustvarjanje shranjenih rutin."
 
@@ -9038,29 +9020,24 @@ msgstr "Omogoča ustvarjanje shranjenih rutin."
 msgid "Allows creating new tables."
 msgstr "Omogoča ustvarjanje novih tabel."
 
-#: server_privileges.php:40 server_privileges.php:257
-#: server_privileges.php:633
+#: server_privileges.php:40 server_privileges.php:257 server_privileges.php:633
 msgid "Allows creating temporary tables."
 msgstr "Omogoča ustvarjanje začasnih tabel."
 
-#: server_privileges.php:41 server_privileges.php:307
-#: server_privileges.php:669
+#: server_privileges.php:41 server_privileges.php:307 server_privileges.php:669
 msgid "Allows creating, dropping and renaming user accounts."
 msgstr "Omogoča ustvarjanje, brisanje in preimenovanje uporabniških računov."
 
-#: server_privileges.php:42 server_privileges.php:273
-#: server_privileges.php:286 server_privileges.php:641
-#: server_privileges.php:645
+#: server_privileges.php:42 server_privileges.php:273 server_privileges.php:286
+#: server_privileges.php:641 server_privileges.php:645
 msgid "Allows creating new views."
 msgstr "Omogoča ustvarjanje novih pogledov."
 
-#: server_privileges.php:43 server_privileges.php:209
-#: server_privileges.php:621
+#: server_privileges.php:43 server_privileges.php:209 server_privileges.php:621
 msgid "Allows deleting data."
 msgstr "Omogoča brisanje podatkov."
 
-#: server_privileges.php:44 server_privileges.php:217
-#: server_privileges.php:632
+#: server_privileges.php:44 server_privileges.php:217 server_privileges.php:632
 msgid "Allows dropping databases and tables."
 msgstr "Omogoča brisanje zbirk podatkov in tabel."
 
@@ -9068,18 +9045,15 @@ msgstr "Omogoča brisanje zbirk podatkov in tabel."
 msgid "Allows dropping tables."
 msgstr "Omogoča brisanje tabel."
 
-#: server_privileges.php:46 server_privileges.php:277
-#: server_privileges.php:649
+#: server_privileges.php:46 server_privileges.php:277 server_privileges.php:649
 msgid "Allows to set up events for the event scheduler"
 msgstr "Omogoča določanje dogodkov za načrtovalnik dogodkov"
 
-#: server_privileges.php:47 server_privileges.php:311
-#: server_privileges.php:637
+#: server_privileges.php:47 server_privileges.php:311 server_privileges.php:637
 msgid "Allows executing stored routines."
 msgstr "Omogoča izvajanje shranjenih rutin."
 
-#: server_privileges.php:48 server_privileges.php:233
-#: server_privileges.php:624
+#: server_privileges.php:48 server_privileges.php:233 server_privileges.php:624
 msgid "Allows importing data from and exporting data into files."
 msgstr "Omogoča uvažanje in izvažanje podatkov v datoteke."
 
@@ -9089,34 +9063,29 @@ msgid ""
 msgstr ""
 "Omogoča dodajanje uporabnikov in privilegijev brez osveževanja privilegijev."
 
-#: server_privileges.php:50 server_privileges.php:241
-#: server_privileges.php:631
+#: server_privileges.php:50 server_privileges.php:241 server_privileges.php:631
 msgid "Allows creating and dropping indexes."
 msgstr "Omogoča ustvarjanje in brisanje indeksov."
 
-#: server_privileges.php:51 server_privileges.php:201
-#: server_privileges.php:550 server_privileges.php:619
+#: server_privileges.php:51 server_privileges.php:201 server_privileges.php:550
+#: server_privileges.php:619
 msgid "Allows inserting and replacing data."
 msgstr "Omogoča vstavljanje in zamenjavo podatkov."
 
-#: server_privileges.php:52 server_privileges.php:261
-#: server_privileges.php:664
+#: server_privileges.php:52 server_privileges.php:261 server_privileges.php:664
 msgid "Allows locking tables for the current thread."
 msgstr "Omogoča zaklepanje tabel za trenutno nit."
 
-#: server_privileges.php:53 server_privileges.php:728
-#: server_privileges.php:730
+#: server_privileges.php:53 server_privileges.php:728 server_privileges.php:730
 msgid "Limits the number of new connections the user may open per hour."
 msgstr "Omeji število povezav, ki jih uporabnik lahko odpre v eni uri."
 
-#: server_privileges.php:54 server_privileges.php:716
-#: server_privileges.php:718
+#: server_privileges.php:54 server_privileges.php:716 server_privileges.php:718
 msgid "Limits the number of queries the user may send to the server per hour."
 msgstr ""
 "Omeji število poizved, ki jih uporabnik lahko pošlje strežniku v eni uri."
 
-#: server_privileges.php:55 server_privileges.php:722
-#: server_privileges.php:724
+#: server_privileges.php:55 server_privileges.php:722 server_privileges.php:724
 msgid ""
 "Limits the number of commands that change any table or database the user may "
 "execute per hour."
@@ -9124,62 +9093,54 @@ msgstr ""
 "Omeji število ukazov za spremembo tabel ali zbirke podatkov, ki jih "
 "uporabnik lahko izvrši v eni uri."
 
-#: server_privileges.php:56 server_privileges.php:734
-#: server_privileges.php:736
+#: server_privileges.php:56 server_privileges.php:734 server_privileges.php:736
 msgid "Limits the number of simultaneous connections the user may have."
 msgstr "Omeji število sočasnih povezav, ki jih lahko ima uporabnik."
 
-#: server_privileges.php:57 server_privileges.php:229
-#: server_privileges.php:659
+#: server_privileges.php:57 server_privileges.php:229 server_privileges.php:659
 msgid "Allows viewing processes of all users"
 msgstr "Omogoča ogled procesov vseh uporabnikov"
 
-#: server_privileges.php:58 server_privileges.php:237
-#: server_privileges.php:560 server_privileges.php:665
+#: server_privileges.php:58 server_privileges.php:237 server_privileges.php:560
+#: server_privileges.php:665
 msgid "Has no effect in this MySQL version."
 msgstr "V tej različici MySQL nima pomena."
 
-#: server_privileges.php:59 server_privileges.php:221
-#: server_privileges.php:660
+#: server_privileges.php:59 server_privileges.php:221 server_privileges.php:660
 msgid "Allows reloading server settings and flushing the server's caches."
 msgstr ""
 "Omogoča osveževanje strežnikovih nastavitev in praznjenje strežnikovih "
 "predpomnilnikov."
 
-#: server_privileges.php:60 server_privileges.php:269
-#: server_privileges.php:667
+#: server_privileges.php:60 server_privileges.php:269 server_privileges.php:667
 msgid "Allows the user to ask where the slaves / masters are."
 msgstr ""
 "Da uporabniku pravico poizvedovati kje so njegovi nadrejeni / podrjeni "
 "strežniki."
 
-#: server_privileges.php:61 server_privileges.php:265
-#: server_privileges.php:668
+#: server_privileges.php:61 server_privileges.php:265 server_privileges.php:668
 msgid "Needed for the replication slaves."
 msgstr "Potrebno za podrejene strežnike pri replikaciji."
 
-#: server_privileges.php:62 server_privileges.php:197
-#: server_privileges.php:545 server_privileges.php:618
+#: server_privileges.php:62 server_privileges.php:197 server_privileges.php:545
+#: server_privileges.php:618
 msgid "Allows reading data."
 msgstr "Omogoča branje podatkov."
 
-#: server_privileges.php:63 server_privileges.php:249
-#: server_privileges.php:662
+#: server_privileges.php:63 server_privileges.php:249 server_privileges.php:662
 msgid "Gives access to the complete list of databases."
 msgstr "Omogoča dostop do popolnega spiska zbirk podatkov."
 
-#: server_privileges.php:64 server_privileges.php:290
-#: server_privileges.php:295 server_privileges.php:634
+#: server_privileges.php:64 server_privileges.php:290 server_privileges.php:295
+#: server_privileges.php:634
 msgid "Allows performing SHOW CREATE VIEW queries."
 msgstr "Omogoča izvajanje poizvedb SHOW CREATE VIEW."
 
-#: server_privileges.php:65 server_privileges.php:225
-#: server_privileges.php:661
+#: server_privileges.php:65 server_privileges.php:225 server_privileges.php:661
 msgid "Allows shutting down the server."
 msgstr "Omogoča ugašanje strežnika."
 
-#: server_privileges.php:66 server_privileges.php:253
-#: server_privileges.php:658
+#: server_privileges.php:66 server_privileges.php:253 server_privileges.php:658
 msgid ""
 "Allows connecting, even if maximum number of connections is reached; "
 "required for most administrative operations like setting global variables or "
@@ -9189,13 +9150,12 @@ msgstr ""
 "priklopov; potrebno za večino administrativnih nalog kot sta postavljanje "
 "globalnih spremenljivk in ukinjanje procesov drugih uporabnikov."
 
-#: server_privileges.php:67 server_privileges.php:281
-#: server_privileges.php:650
+#: server_privileges.php:67 server_privileges.php:281 server_privileges.php:650
 msgid "Allows creating and dropping triggers"
 msgstr "Omogoča ustvarjanje in brisanje sprožilcev"
 
-#: server_privileges.php:68 server_privileges.php:205
-#: server_privileges.php:555 server_privileges.php:620
+#: server_privileges.php:68 server_privileges.php:205 server_privileges.php:555
+#: server_privileges.php:620
 msgid "Allows changing data."
 msgstr "Omogoča spreminjanje podatkov."
 
@@ -10871,7 +10831,7 @@ msgstr "Vrednost seje"
 msgid "Global value"
 msgstr "Skupna vrednost"
 
-#: setup/frames/config.inc.php:38 setup/frames/index.inc.php:227
+#: setup/frames/config.inc.php:38 setup/frames/index.inc.php:220
 msgid "Download"
 msgstr "Prenesi"
 
@@ -10880,11 +10840,11 @@ msgid "Incorrect formset, check $formsets array in setup/frames/form.inc.php"
 msgstr ""
 "Neveljaven formset; preverite polje $formsets v setup/frames/form.inc.php"
 
-#: setup/frames/index.inc.php:49
+#: setup/frames/index.inc.php:42
 msgid "Cannot load or save configuration"
 msgstr "Ne morem naložiti ali shraniti konfiguracije"
 
-#: setup/frames/index.inc.php:50
+#: setup/frames/index.inc.php:43
 msgid ""
 "Please create web server writable folder [em]config[/em] in phpMyAdmin top "
 "level directory as described in [a@Documentation."
@@ -10896,7 +10856,7 @@ msgstr ""
 "html#setup_script]dokumentacija[/a]. V naprotnem primeru jo boste lahko samo "
 "prenesli ali jo prikazali."
 
-#: setup/frames/index.inc.php:57
+#: setup/frames/index.inc.php:50
 msgid ""
 "You are not using a secure connection; all data (including potentially "
 "sensitive information, like passwords) is transferred unencrypted!"
@@ -10904,7 +10864,7 @@ msgstr ""
 "Ne uporabljate varne povezave; vsi podatki (vključno z morebitnimi "
 "občutljivimi informacijami, kot so gesla) se prenašajo nešifrirani!"
 
-#: setup/frames/index.inc.php:61
+#: setup/frames/index.inc.php:54
 #, php-format
 msgid ""
 "If your server is also configured to accept HTTPS requests follow [a@%s]this "
@@ -10913,15 +10873,15 @@ msgstr ""
 "Če je vaš strežnik nastavljen za sprejemanje zahtev HTTPS, sledite [a@%s]tej "
 "povezavi[/a] za uporabo varne povezave."
 
-#: setup/frames/index.inc.php:65
+#: setup/frames/index.inc.php:58
 msgid "Insecure connection"
 msgstr "Nezavarovana povezava"
 
-#: setup/frames/index.inc.php:94
+#: setup/frames/index.inc.php:87
 msgid "Configuration saved."
 msgstr "Konfiguracija je shranjena."
 
-#: setup/frames/index.inc.php:95
+#: setup/frames/index.inc.php:88
 msgid ""
 "Configuration saved to file config/config.inc.php in phpMyAdmin top level "
 "directory, copy it to top level one and delete directory config to use it."
@@ -10930,55 +10890,55 @@ msgstr ""
 "phpMyAdmin; skopirajte jo v vrhnjo mapo in izbrišite mapo config, če jo "
 "želite uporabiti."
 
-#: setup/frames/index.inc.php:102 setup/frames/menu.inc.php:15
+#: setup/frames/index.inc.php:95 setup/frames/menu.inc.php:15
 msgid "Overview"
 msgstr "Pregled"
 
-#: setup/frames/index.inc.php:110
+#: setup/frames/index.inc.php:103
 msgid "Show hidden messages (#MSG_COUNT)"
 msgstr "Prikaži skrita sporočila (#MSG_COUNT)"
 
-#: setup/frames/index.inc.php:150
+#: setup/frames/index.inc.php:143
 msgid "There are no configured servers"
 msgstr "Ni konfiguriranih strežnikov"
 
-#: setup/frames/index.inc.php:158
+#: setup/frames/index.inc.php:151
 msgid "New server"
 msgstr "Nov strežnik"
 
-#: setup/frames/index.inc.php:187
+#: setup/frames/index.inc.php:180
 msgid "Default language"
 msgstr "Privzet jezik"
 
-#: setup/frames/index.inc.php:197
+#: setup/frames/index.inc.php:190
 msgid "let the user choose"
 msgstr "naj uporabnik izbere"
 
-#: setup/frames/index.inc.php:208
+#: setup/frames/index.inc.php:201
 msgid "- none -"
 msgstr "- noben -"
 
-#: setup/frames/index.inc.php:211
+#: setup/frames/index.inc.php:204
 msgid "Default server"
 msgstr "Privzet strežnik"
 
-#: setup/frames/index.inc.php:221
+#: setup/frames/index.inc.php:214
 msgid "End of line"
 msgstr "Konec vrstice"
 
-#: setup/frames/index.inc.php:226
+#: setup/frames/index.inc.php:219
 msgid "Display"
 msgstr "Prikaži"
 
-#: setup/frames/index.inc.php:230
+#: setup/frames/index.inc.php:223
 msgid "Load"
 msgstr "Naloži"
 
-#: setup/frames/index.inc.php:241
+#: setup/frames/index.inc.php:234
 msgid "phpMyAdmin homepage"
 msgstr "Domača stran phpMyAdmin"
 
-#: setup/frames/index.inc.php:242
+#: setup/frames/index.inc.php:236
 msgid "Donate"
 msgstr "Daruj"
 
@@ -11014,41 +10974,7 @@ msgstr "Prezri napake"
 msgid "Show form"
 msgstr "Pokaži obrazec"
 
-#: setup/lib/index.lib.php:122
-msgid ""
-"Neither URL wrapper nor CURL is available. Version check is not possible."
-msgstr "Na voljo ni ne vmesnik URL ne CURL. Preverjanje različice ni mogoče."
-
-#: setup/lib/index.lib.php:132
-msgid ""
-"Reading of version failed. Maybe you're offline or the upgrade server does "
-"not respond."
-msgstr ""
-"Branje različice je spodletelo. Morda niste povezani v internet ali pa se "
-"posodobitveni strežnik ne odziva."
-
-#: setup/lib/index.lib.php:152
-msgid "Got invalid version string from server"
-msgstr "Od strežnika sem dobil neveljavno besedilo različice"
-
-#: setup/lib/index.lib.php:162
-msgid "Unparsable version string"
-msgstr "Nerazčlenljivo besedilo različice"
-
-#: setup/lib/index.lib.php:180
-#, php-format
-msgid ""
-"You are using Git version, run [kbd]git pull[/kbd] :-)[br]The latest stable "
-"version is %s, released on %s."
-msgstr ""
-"Uporabljate nadležno različico, zaženite [kbd]tecnoba odstrani[/kbd] :-)"
-"[br]Najnovejša stabilna različica je %s, izdana %s."
-
-#: setup/lib/index.lib.php:186
-msgid "No newer stable version is available"
-msgstr "Na voljo ni novejše stabilne različice"
-
-#: setup/lib/index.lib.php:274
+#: setup/lib/index.lib.php:175
 #, php-format
 msgid ""
 "This %soption%s should be disabled as it allows attackers to bruteforce "
@@ -11062,7 +10988,7 @@ msgstr ""
 "temelječa na IP, ni zanesljiva, če vaš IP pripada ISP-ju, na katerega je "
 "povezanih tisoče uporabnikov, vključno z vami."
 
-#: setup/lib/index.lib.php:276
+#: setup/lib/index.lib.php:177
 msgid ""
 "You didn't have blowfish secret set and have enabled cookie authentication, "
 "so a key was automatically generated for you. It is used to encrypt cookies; "
@@ -11072,7 +10998,7 @@ msgstr ""
 "s piškotki, je bil ključ za vas samodejno ustvarjen. Uporablja se pri "
 "šifriranju piškotkov; ne rabite si ga zapomniti."
 
-#: setup/lib/index.lib.php:277
+#: setup/lib/index.lib.php:178
 #, php-format
 msgid ""
 "%sBzip2 compression and decompression%s requires functions (%s) which are "
@@ -11081,7 +11007,7 @@ msgstr ""
 "%sStiskanje in razširjanje Bzip2%s potrebuje funkcije (%s), ki na tem "
 "sistemu niso na voljo."
 
-#: setup/lib/index.lib.php:279
+#: setup/lib/index.lib.php:180
 msgid ""
 "This value should be double checked to ensure that this directory is neither "
 "world accessible nor readable or writable by other users on your server."
@@ -11089,12 +11015,12 @@ msgstr ""
 "Vrednost ponovno preverite, da se prepričate, da mapa ni dostopna ne svetu "
 "in ne na voljo za branje ali pisanje drugim uporabnikom na vašem strežniku."
 
-#: setup/lib/index.lib.php:280
+#: setup/lib/index.lib.php:181
 #, php-format
 msgid "This %soption%s should be enabled if your web server supports it."
 msgstr "Ta %smožnost%s naj bo omogočena, če jo vaš spletni strežnik podpira."
 
-#: setup/lib/index.lib.php:282
+#: setup/lib/index.lib.php:183
 #, php-format
 msgid ""
 "%sGZip compression and decompression%s requires functions (%s) which are "
@@ -11103,7 +11029,7 @@ msgstr ""
 "%sStiskanje in razširjanje GZip%s zahteva funkcije (%s), ki na tem sistemu "
 "niso na voljo."
 
-#: setup/lib/index.lib.php:284
+#: setup/lib/index.lib.php:185
 #, php-format
 msgid ""
 "%sLogin cookie validity%s greater than 1440 seconds may cause random session "
@@ -11114,7 +11040,7 @@ msgstr ""
 "naključno razvrednotenje seje, če je %ssession.gc_maxlifetime%s nižji od "
 "njegove vrednosti (trenutno %d)."
 
-#: setup/lib/index.lib.php:286
+#: setup/lib/index.lib.php:187
 #, php-format
 msgid ""
 "%sLogin cookie validity%s should be set to 1800 seconds (30 minutes) at "
@@ -11124,7 +11050,7 @@ msgstr ""
 "(30 minut). Vrednosti večje od 1800 lahko predstavljajo varnostno tveganje, "
 "kot je pretvarjanje za drugo osebo."
 
-#: setup/lib/index.lib.php:288
+#: setup/lib/index.lib.php:189
 #, php-format
 msgid ""
 "If using cookie authentication and %sLogin cookie store%s is not 0, %sLogin "
@@ -11134,7 +11060,7 @@ msgstr ""
 "ni 0, mora biti %sVeljavnost prijavnega piškotka%s določena na manjšo ali "
 "enako vrednost."
 
-#: setup/lib/index.lib.php:290
+#: setup/lib/index.lib.php:191
 #, php-format
 msgid ""
 "If you feel this is necessary, use additional protection settings - %shost "
@@ -11147,7 +11073,7 @@ msgstr ""
 "koli, zaščita temelječa na IP ni zanesljiva, če vaš IP pripada ISP-ju, na "
 "katerega je povezanih tisoče uporabnikov, vključno z vami."
 
-#: setup/lib/index.lib.php:292
+#: setup/lib/index.lib.php:193
 #, php-format
 msgid ""
 "You set the [kbd]config[/kbd] authentication type and included username and "
@@ -11162,7 +11088,7 @@ msgstr ""
 "neposredno dostopa do vaše plošče phpMyAdmin. Nastavite %svrsto overovitve%s "
 "na [kbd]cookie[/kbd] ali [kbd]http[/kbd]."
 
-#: setup/lib/index.lib.php:294
+#: setup/lib/index.lib.php:195
 #, php-format
 msgid ""
 "%sZip compression%s requires functions (%s) which are unavailable on this "
@@ -11170,7 +11096,7 @@ msgid ""
 msgstr ""
 "%sStiskanje Zip%s zahteva funkcije (%s), ki na tem sistemu niso na voljo."
 
-#: setup/lib/index.lib.php:296
+#: setup/lib/index.lib.php:197
 #, php-format
 msgid ""
 "%sZip decompression%s requires functions (%s) which are unavailable on this "
@@ -11178,23 +11104,23 @@ msgid ""
 msgstr ""
 "%sRazširjanje Zip%s zahteva funkcije (%s), ki na tem sistemu niso na voljo."
 
-#: setup/lib/index.lib.php:324
+#: setup/lib/index.lib.php:225
 msgid "You should use SSL connections if your database server supports it."
 msgstr "Uporabite povezave SSL, če jih vaš strežnik zbirke podatkov podpira."
 
-#: setup/lib/index.lib.php:337
+#: setup/lib/index.lib.php:238
 msgid "You should use mysqli for performance reasons."
 msgstr "Zaradi zmogljivostnih razlogov uporabljajte mysqli."
 
-#: setup/lib/index.lib.php:368
+#: setup/lib/index.lib.php:269
 msgid "You allow for connecting to the server without a password."
 msgstr "Dovoljujete povezavo s strežnikom brez gesla."
 
-#: setup/lib/index.lib.php:390
+#: setup/lib/index.lib.php:291
 msgid "Key is too short, it should have at least 8 characters."
 msgstr "Ključ je prekratek, ima naj vsaj 8 znakov."
 
-#: setup/lib/index.lib.php:397
+#: setup/lib/index.lib.php:298
 msgid "Key should contain letters, numbers [em]and[/em] special characters."
 msgstr "Ključ naj vsebuje črke, številke [em]in[/em] posebne znake."
 
@@ -11929,6 +11855,11 @@ msgstr "Razpoložljive pretvorbe"
 msgctxt "for MIME transformation"
 msgid "Description"
 msgstr "Opis"
+
+#: url.php:33
+#, php-format
+msgid "Taking you to <a href=\"%s\">%s</a>."
+msgstr ""
 
 #: user_password.php:34
 msgid "You don't have sufficient privileges to be here right now!"
@@ -13199,6 +13130,34 @@ msgstr ""
 #: po/advisory_rules.php:273
 msgid "concurrent_insert is set to 0"
 msgstr "concurrent_insert je nastavljeno na 0"
+
+#~ msgid ""
+#~ "Neither URL wrapper nor CURL is available. Version check is not possible."
+#~ msgstr ""
+#~ "Na voljo ni ne vmesnik URL ne CURL. Preverjanje različice ni mogoče."
+
+#~ msgid ""
+#~ "Reading of version failed. Maybe you're offline or the upgrade server "
+#~ "does not respond."
+#~ msgstr ""
+#~ "Branje različice je spodletelo. Morda niste povezani v internet ali pa se "
+#~ "posodobitveni strežnik ne odziva."
+
+#~ msgid "Got invalid version string from server"
+#~ msgstr "Od strežnika sem dobil neveljavno besedilo različice"
+
+#~ msgid "Unparsable version string"
+#~ msgstr "Nerazčlenljivo besedilo različice"
+
+#~ msgid ""
+#~ "You are using Git version, run [kbd]git pull[/kbd] :-)[br]The latest "
+#~ "stable version is %s, released on %s."
+#~ msgstr ""
+#~ "Uporabljate nadležno različico, zaženite [kbd]tecnoba odstrani[/kbd] :-)"
+#~ "[br]Najnovejša stabilna različica je %s, izdana %s."
+
+#~ msgid "No newer stable version is available"
+#~ msgstr "Na voljo ni novejše stabilne različice"
 
 #~ msgid "phpMyAdmin is more friendly with a <b>frames-capable</b> browser."
 #~ msgstr "phpMyAdmin je prijaznejši z brskalnikom, ki <b>podpira okvirje</b>."
